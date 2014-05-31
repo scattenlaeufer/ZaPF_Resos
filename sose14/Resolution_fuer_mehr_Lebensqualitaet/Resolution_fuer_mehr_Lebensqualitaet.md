@@ -14,7 +14,7 @@ Frühstücks aus, dabei wird die ganze Tagung über ein Frühstücksbuffet
 angeboten und ständig befüllt gehalten.
 
 Einige ZaPFika mögen trotz des großen Schlafmangels keinen Kaffee. Um diesen
-trotzdem die Möglichkeit einen Heißgetränkes nicht zu nehmen, sollte auch heißes
+trotzdem die Möglichkeit eines Heißgetränkes nicht zu nehmen, sollte auch heißes
 Wasser und Teebeutel verteilt werden.
 
 **Verfasser:** Björn Guth (Aachen), Jörg Behrmann (FUB), Wolfgang Bauer (Alter Sack)
