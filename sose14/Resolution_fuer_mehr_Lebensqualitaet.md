@@ -10,3 +10,5 @@ Viele ZaPFika besuchen andere BuFaTas, darunter KIF und KOMA.
 KIF und KOMA zeichnen sich unter anderem durch die Tradition des ewigen
 Frühstücks aus, dabei wird die ganze Tagung über ein Frühstücksbuffet
 angeboten.
+
+Verfasser: Björn Guth (Aachen), Jörg Behrmann (FUB) und der Rest des Git-Workshops
