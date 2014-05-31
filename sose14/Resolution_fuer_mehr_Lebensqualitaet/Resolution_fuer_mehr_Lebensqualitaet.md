@@ -3,10 +3,12 @@ Resolution für mehr Lebensqualität
 
 **Adressaten:** Zukünftige ZaPFen ausrichtende Fachschaften.
 
-**Antrag:** Die ZaPF möge ihr wohlwollendes Interesse an ewigen Frühstücken
-aussprechen. Auch wäre es zu wünschen, die Möglichkeit der Einreichungen von
-Anträgen über Git zu Managen. Weiterhin soll in Zukunft auch Tee gleichberechtigt
-mit Kaffee innerhalb der Arbeitskreise verteilt werden.
+**Antrag:** Die ZaPF möge beschließen:
+
+Die ZaPF spricht ihr wohlwollendes Interesse an ewigen Frühstücken
+aussprechen aus. Weiterhin wäre es wünschenswert, die Möglichkeit der Einreichungen von
+Anträgen über Git zu realisieren. Darüber hinaus soll in Zukunft auch Tee
+gleichberechtigt mit Kaffee innerhalb der Arbeitskreise verteilt werden.
 
 **Begründung:**
 Viele ZaPFika besuchen andere BuFaTas, darunter KIF und KOMA.
