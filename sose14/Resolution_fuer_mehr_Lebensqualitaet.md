@@ -8,4 +8,5 @@ Forderung: Die ZaPF möge in Zukunft ein ewiges Frühstück anbieten.
 Begründung:
 Viele ZaPFika besuchen andere BuFaTas, darunter KIF und KOMA.
 KIF und KOMA zeichnen sich unter anderem durch die Tradition des ewigen
-Frühstücks aus.
+Frühstücks aus, dabei wird die ganze Tagung über ein Frühstücksbuffet
+angeboten.
