@@ -4,14 +4,17 @@ Resolution für mehr Lebensqualität
 **Adressaten:** Zukünftige ZaPFen ausrichtende Fachschaften.
 
 **Antrag:** Die ZaPF möge ihr wohlwollendes Interesse an ewigen Frühstücken
-aussprechen. Weiterhin soll in Zukunft auch Tee gleichberechtigt mit Kaffee
-innerhalb der Arbeitskreise verteilt werden.
+aussprechen. Auch wäre es zu wünschen, die Möglichkeit der Einreichungen von
+Anträgen über Git zu Managen. Weiterhin soll in Zukunft auch Tee gleichberechtigt
+mit Kaffee innerhalb der Arbeitskreise verteilt werden.
 
 **Begründung:**
 Viele ZaPFika besuchen andere BuFaTas, darunter KIF und KOMA.
 KIF und KOMA zeichnen sich unter anderem durch die Tradition des ewigen
 Frühstücks aus, dabei wird die ganze Tagung über ein Frühstücksbuffet
 angeboten und ständig befüllt gehalten.
+
+Das Managen der auf einer ZaPF entstehenden Anträgen hat sowohl für Teilnehmer, als auch für die ausführende Fachschaft einige Vorteile. 
 
 Einige ZaPFika mögen trotz des großen Schlafmangels keinen Kaffee. Um diesen
 trotzdem die Möglichkeit eines Heißgetränkes nicht zu nehmen, sollte auch heißes
