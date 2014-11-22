@@ -1,0 +1,81 @@
+\documentclass[aspectratio=43]{beamer}
+
+\usetheme{default}
+
+% Sprache und Encodings
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{epigraph}
+\usepackage{quotchap}
+
+% Typographisch interessante Pakete
+%\usepackage{microtype} % Randkorrektur und andere Anpassungen
+
+\title{Resolution zur Netzneutralität in Universitätsnetzen}
+\author{Jörg Behrmann (FUB), Björn Guth (RWTH)}
+\date{}
+
+\usenavigationsymbolstemplate{}
+
+\begin{document}
+
+\begin{frame}
+	\maketitle
+\end{frame}
+
+\begin{frame}
+	\begin{quote}
+	\textit{eduroam allows students, researchers and staff from participating institutions to obtain Internet connectivity across campus and when visiting other participating institutions by simply opening their laptop.}
+	
+	\qauthor{eduroam.org}
+	\end{quote}
+	\vfill\hfill \tiny{(nicht Teil des Resolutionstextes)}
+\end{frame}
+
+\begin{frame}{Resolution zur Netzneutralität in Universitätsnetzen}
+Die ZaPF fordert eine uneingeschränkte Einhaltung der Netzneutralität in Universitätsnetzen.
+
+Zu den bekannten Einschränkungen gehören das Sperren bestimmter Ports oder die
+Drosselung langanhalter Verbindungen. Diese und ähnliche Methoden sind
+untragbar.
+
+Langanhaltende, schnell Verbindungen sind unerlässlich zur Übertragung großer
+Datenmengen wie Experimentaldaten und auch wenn wir die Notwendigkeit der
+Absicherung informationstechnischer Systeme einsehen, so muss das unten genannte Mindestmaß an offenen Ports für
+eine umstandslose Kommunikation gewährleistet sein.
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\begin{tabular}{rl}
+	\toprule
+	Port & Service \\
+	\midrule
+	22 & SSH \\
+	25 & SMTP \\
+	80 & HTTP \\
+	143 & IMAP \\
+	220 & IMAP3 \\
+	389 & LDAP \\
+	425 & SMTPs \\
+	465 & HTTPs \\
+	666 & Doom \\
+	993 & IMAP via TLS/SSL \\
+	6697 & IRC via TLS/SSL \\
+	\bottomrule
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}
+Des weiteren fordern wir die Adressaten auf, eine Stellungnahme zu den durch sie vorgenommenen Maßnahmen abzugeben. Außerdem befürworten wir die Veröffentlichung dieser an geeigneter Stelle im Webauftritt der entsprechenden Hochschule und als Gesamtveröffentlichung durch den Verein zur Förderung eines Deutschen Forschungsnetzes e.V.
+
+\vspace{1cm}
+
+\textbf{Adressaten:} Verein zur Förderung eines Deutschen Forschungsnetzwerks e.V., EDV-Abteilungen deutscher Hochschulen in staatlicher Trägerschaft
+
+\end{frame}
+
+\end{document}
