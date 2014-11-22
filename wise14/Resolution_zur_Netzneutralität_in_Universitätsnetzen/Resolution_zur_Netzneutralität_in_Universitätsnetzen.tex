@@ -4,7 +4,7 @@
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{epigraph}
+\usepackage{booktabs}
 
 % Typographisch interessante Pakete
 \usepackage{microtype} % Randkorrektur und andere Anpassungen
@@ -40,6 +40,24 @@ Die ZaPF fordert eine uneingeschränkte Einhaltung der Netzneutralität in Unive
 kein trafic shaping
 
 wichtige ports offen
+
+\begin{tabular}{rl}
+	\toprule
+	Port & Service \\
+	\midrule
+	22 & SSH \\
+	25 & SMTP \\
+	80 & HTTP \\
+	143 & IMAP \\
+	220 & IMAP v3 \\
+	389 & LDAP \\
+	425 & SMTPs \\
+	465 & HTTPs \\
+	666 & Doom \\
+	993 & IMAP via TLS/SSL \\
+	6697 & IRC via TLS/SSL \\
+	\bottomrule
+\end{tabular}
 \end{quote}
 
 \subsection*{Begründung:}
