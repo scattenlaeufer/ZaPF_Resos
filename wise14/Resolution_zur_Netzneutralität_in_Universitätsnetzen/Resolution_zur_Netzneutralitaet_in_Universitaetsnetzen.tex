@@ -22,7 +22,7 @@
 
 % Formatierung auf A4 anpassen
 \usepackage{geometry}
-\geometry{paper=a4paper,left=20mm,right=20mm,top=10mm,bottom=10mm}
+\geometry{paper=a4paper,left=15mm,right=15mm,top=10mm,bottom=10mm}
 
 \renewcommand*\dictumwidth{0.95\linewidth}
 
@@ -30,17 +30,24 @@
 
 \section*{Resolution zur Netzneutralität in Univeritätsnetzen}
 
-\textbf{Adressaten:} DFN, EDV-Abteilungen deutscher Hochschulen in staatlicher Trägerschaft
+\textbf{Adressaten:} Verein zur Förderung eines Deutschen Forschungsnetzwerks e.V., EDV-Abteilungen deutscher Hochschulen in staatlicher Trägerschaft
 
 \subsection*{Antrag:}
 Die ZaPF möge beschließen:
 \begin{quote}
 Die ZaPF fordert eine uneingeschränkte Einhaltung der Netzneutralität in Universitätsnetzen.
 
-kein trafic shaping
+Zu den bekannten Einschränkungen gehören das Sperren bestimmter Ports oder die
+Drosselung langanhalter Verbindungen. Diese und ähnliche Methoden sind
+untragbar.
 
-wichtige ports offen
+Langanhaltende, schnell Verbindungen sind unerlässlich zur Übertragung großer
+Datenmengen wie Experimentaldaten und auch wenn wir die Notwendigkeit der
+Absicherung informationstechnischer Systeme einsehen, so muss das unten genannte Mindestmaß an offenen Ports für
+eine umstandslose Kommunikation gewährleistet sein.
 
+\vspace{0.5cm}
+\begin{center}
 \begin{tabular}{rl}
 	\toprule
 	Port & Service \\
@@ -49,7 +56,7 @@ wichtige ports offen
 	25 & SMTP \\
 	80 & HTTP \\
 	143 & IMAP \\
-	220 & IMAP v3 \\
+	220 & IMAP3 \\
 	389 & LDAP \\
 	425 & SMTPs \\
 	465 & HTTPs \\
@@ -58,6 +65,9 @@ wichtige ports offen
 	6697 & IRC via TLS/SSL \\
 	\bottomrule
 \end{tabular}
+\end{center}
+\vspace{0.5cm}
+Des weiteren fordern wir die Adressaten auf, eine Stellungnahme zu den durch sie vorgenommenen Maßnahmen abzugeben. Außerdem befürworten wir die Veröffentlichung dieser an geeigneter Stelle im Webauftritt der entsprechenden Hochschule und als Gesamtveröffentlichung durch den Verein zur Förderung eines Deutschen Forschungsnetzes e.V.
 \end{quote}
 
 \subsection*{Begründung:}
@@ -73,16 +83,8 @@ gesamten deutschsprachigen Raum mussten wir jedoch oftmals feststellen, dass
 willkürliche und zumeist unverständliche Einschränkungen vielerorts zum Alltag
 gehören und das Arbeiten unnötig erschweren.
 
-Zu den bekannten Einschränkungen gehören das Sperren bestimmter Ports oder die
-Drosselung langanhalter Verbindungen. Diese und ähnliche Methoden sind
-untragbar.
-
-Langanhaltende, schnell Verbindungen sind unerlässlich zur übertragung großer
-Datenmengen wie Experimentaldaten und auch wenn wir die Notwendigkeit der
-Absicherung einsehen, so muss das oben genannte Mindestmaß an offenen Ports für
-eine umstandslose Kommunikation gewährleistet sein.
 
 \vspace{1cm}
-\textbf{Verfasser:} Björn Guth (RWTH), Jörg Behrmann (FUB)
+\textbf{Verfasser:} Jörg Behrmann (FUB), Björn Guth (RWTH)
 
 \end{document}
