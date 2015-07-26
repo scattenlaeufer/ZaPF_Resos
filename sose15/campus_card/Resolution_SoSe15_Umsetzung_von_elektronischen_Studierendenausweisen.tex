@@ -1,0 +1,117 @@
+\documentclass[DIV=calc]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+
+\usepackage{fixltx2e}
+\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+
+\usepackage{lmodern}                        % Ersatz fuer Computer Modern-Schriften
+\usepackage{hfoldsty}
+
+\usepackage{fourier} 			% Schriftart
+\usepackage[scaled=0.81]{helvet} 	% Schriftart
+
+\usepackage{url}
+\usepackage{tocloft} 			% Paket für Table of Contents
+
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,	
+  linkcolor=black,	% Farbe der internen Links (u.a. Table of Contents)
+  urlcolor=black,	% Farbe der url-links
+  citecolor=black} % Farbe der Literaturverzeichnis-Links
+
+\usepackage{mdwlist} 	% Änderung der Zeilenabstände bei itemize und enumerate
+
+\parindent 0pt 				% Absatzeinrücken verhindern
+\parskip 12pt 				% Absätze durch Lücke trennen
+
+\usepackage{titlesec}	% Abstand nach Überschriften neu definieren
+\titlespacing{\subsection}{0ex}{3ex}{-1ex}
+\titlespacing{\subsubsection}{0ex}{3ex}{-1ex}		
+
+% \pagestyle{empty}
+\setlength{\textheight}{23cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{www.zapfev.de\\stapf@googlegroups.de}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+
+\begin{document}
+\hspace{0.87\textwidth}
+\begin{minipage}{120pt}
+\vspace{-1.8cm}
+\includegraphics[width=80pt]{../../logo.pdf}
+\centering
+\small Zusammenkunft aller Physik-Fachschaften
+\end{minipage}
+\begin{center}
+\huge{Stellungnahme der Zusammenkunft aller Physik-Fachschaften} \\
+\normalsize
+\end{center}
+
+\vspace{1cm}
+\section*{Umsetzung von elektronischer Studierendenausweisen}
+
+In vielen Hochschulen wurden in den letzten Jahren elektronische Studierendenausweise eingeführt
+bzw. sind diese in Planung. Grundsätzlich begrüßen wir Vereinfachungen des Studierendenalltags,
+folgende Punkte müssen jedoch beachtet werden:
+
+\begin{enumerate}
+\itemsep1pt\parskip0pt\parsep0pt
+    \item{\textbf{Chipkarte:} Falls in der Karte elektronische Aufzeichnungsmethoden verwendet werden, so sollen folgende Standards gelten:
+	\begin{itemize}
+	\itemsep1pt\parskip0pt\parsep0pt
+
+	    \item{Auf dem Chip dürfen nur die nötigsten Daten für die angebotenen Funktionalitäten liegen.}
+	    \item{Alle Daten der einzelnen Funktionen müssen separat gespeichert, verschlüsselt und verarbeitet werden.}
+	    \item{Für die Chipkarte müssen aktuelle und sichere Verfahren verwendet werden. Insbesondere eine nicht authorisierte Datenauslesung muss verhindert werden.}
+	    \item{Bei Bekanntwerden von Sicherheitsmängeln müssen die Betroffenen umgehend informiert und das Problem behoben werden.}
+	\end{itemize}
+    }
+    \item{\textbf{Matrikelnummer:} Wenn die Matrikelnummer nicht zwingend auf dem Studierendenausweis für
+    organisatorische Abläufe benötigt wird, bevorzugen wir, dass sie dort nicht aufgedruckt wird.}
+    \item{\textbf{Lichtbild:} Ein verpflichtendes Lichtbild für die Studierendenausweise soll nur nach Absprache
+    mit der Zustimmung der Studierendenvertretung eingeführt werden. Es muss für alle Studierenden
+    die Option geben einen Ausweis ohne Lichtbild zu benutzen.}
+    \item{\textbf{Bezahlfunktion/Mensa-Karte:} Sollte eine Bezahlfunktion für Mensa, Kopierer, Drucker oder
+    ähnliches verwendet werden, soll diese anonym eingerichtet werden. Insbesondere ist uns wichtig,
+    dass keine Daten außer den für das Bezahlsystem nötigen aufgezeichnet werden. Die Menge an
+    notwendigen persönlichen Daten soll so gering wie möglich gehalten werden.}
+    \item{\textbf{Anwesenheitskontrolle:} Wir sind gegen jegliche Möglichkeit zur Kontrolle der Anwesenheit
+    einzelner, namentlicher Personen mit den Funktionen des Studierendenausweises. Dies gilt
+    sowohl für Lehrveranstaltungen als auch für Tätigkeiten als studentische Hilfskraft. Anonyme
+    Kontrollen von sicherheitskritischen Funktionen wie Schließberechtigungen sollen auf das Nötigste
+    reduziert sein.}
+    \item{\textbf{Prüfungsverwaltung:} Wir lehnen eine Verknüpfung des elektronischen Studierendenausweises und
+    der Prüfungsverwaltung (An- und Abmeldung, Noteneinsicht) ab. Die Prüfungsverwaltung sollte
+    unabhängig von den elektronischen Funktionen des Studierendenausweises durchführbar sein.
+    Damit ist diese unabhängig von einem physischen Medium möglich, welches die Ausfallsicherheit
+    erheblich erhöht. Dadurch ist die umständliche Implemetierung einer digitalen Signaturfunktion
+    auf der Karte nicht notwendig.}
+    \item{\textbf{Semesterticket:} Der Nachweis der Beförderungsberechtigung sollte in den Studierendenausweis
+    integriert werden. Dabei sollen wenn möglich nur Methoden verwendet werden, welche das
+    Verfolgen einzelner Personen verhindern.}
+    \item{\textbf{Bibliothek:} Grundsätzlich befürworten wir eine Nutzung des Studierendenausweis auch als
+    Bibliotheksausweis.}
+\end{enumerate}
+
+\vfill
+\begin{flushright}
+Verabschiedet am 31.05.2015 in Aachen
+\end{flushright}
+
+
+
+
+\end{document}
