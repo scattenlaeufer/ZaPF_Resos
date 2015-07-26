@@ -37,24 +37,43 @@
 \titlespacing{\subsubsection}{0ex}{3ex}{-1ex}		
 
 % \pagestyle{empty}
-\setlength{\textheight}{23cm}
+\setlength{\textheight}{22.5cm}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \cfoot{}
-\lfoot{Zusammenkunft aller Physik-Fachschaften}
-\rfoot{www.zapfev.de\\stapf@googlegroups.de}
+\lfoot{Zusammenkunft aller Physik-Fachschaften\\Konferenz der Informatikfachschaften\\Konferenz der Mathematikfachschaften}
+\rfoot{www.zapfev.de\\kif.fsinf.de\\www.die-koma.org}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0.1pt}
 
+\usepackage{adjustbox}
 
 \begin{document}
-\hspace{0.87\textwidth}
-\begin{minipage}{120pt}
-\vspace{-1.8cm}
-\includegraphics[width=80pt]{../../logo.pdf}
-\centering
-\small Zusammenkunft aller Physik-Fachschaften
+\begin{adjustbox}{center}
+\begin{minipage}{1.2\textwidth}
+	\begin{minipage}{4cm}
+		\vspace{-1.4cm}
+		\includegraphics[width=\textwidth]{komaLogo.png}\\
+		\centering
+		\small Konferenz der \\ Mathematikfachschaften
+	\end{minipage}
+	\hfill
+	\begin{minipage}[c]{0.25\textwidth}
+		\vspace{-2cm}
+		\includegraphics[width=\textwidth]{zkk_logo.pdf}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{4cm}
+		\begin{minipage}{120pt}
+			\vspace{-1.8cm}
+			\includegraphics[width=80pt]{../../logo.pdf}
+			\centering
+			\small Zusammenkunft aller Physik-Fachschaften
+		\end{minipage}
+	\end{minipage}
 \end{minipage}
+\end{adjustbox}
+\vspace{0.5cm}
 \begin{center}
 \huge{Stellungnahme der Zusammenkunft aller Physik-Fachschaften, der Konferenz
 der Informatikfachschaften und der Konfrenz der Mathematikfachschaften} \\
@@ -63,51 +82,51 @@ der Informatikfachschaften und der Konfrenz der Mathematikfachschaften} \\
 
 \vspace{1cm}
 \section*{Resolution zur qualitativen Umsetzung von  eduroam und anderen
-  hochschulöffentlichen Netzwerken an allen Hochschulen}
+hochschulöffentlichen Netzwerken an allen Hochschulen}
 
-  Die zeichnenden Bundesfachschaftentagungen begrüßen das weit verbreitete
-  Angebot von eduroam an deutschsprachigen Hochschulen und halten die
-  Qualitätssicherung des eduroam-Netzwerkes für die Arbeit an Hochschulen für
-  unerlässlich.
+Die zeichnenden Bundesfachschaftentagungen begrüßen das weit verbreitete
+Angebot von eduroam an deutschsprachigen Hochschulen und halten die
+Qualitätssicherung des eduroam-Netzwerkes für die Arbeit an Hochschulen für
+unerlässlich.
 
-  Wir halten folgende Punkte für besonders kritisch und möchten daher auf diese
-  explizit hinweisen:
+Wir halten folgende Punkte für besonders kritisch und möchten daher auf diese
+explizit hinweisen:
 
+\begin{enumerate}
+\item Wir fordern die Einhaltung der eduroam Policy Service Definition,
+  festgelegt von der GÉANT Association, in der Version 2.8 vom Juli 2012, da
+  in der Vergangenheit von einigen Hochschulen einige Empfehlungen sowie
+  Forderungen hierin nicht beachtet wurden.
+
+  Herausheben wollen wir dabei
   \begin{enumerate}
-  \item Wir fordern die Einhaltung der eduroam Policy Service Definition,
-    festgelegt von der GÉANT Association, in der Version 2.8 vom Juli 2012, da
-    in der Vergangenheit von einigen Hochschulen einige Empfehlungen sowie
-    Forderungen hierin nicht beachtet wurden.
+  \item  die Einhaltung der in Abschnitt 6.3.3, Unterpunkt ``Network'',
+    aufgeführten Liste der unbedingt anzubietenden Ports. Leider wurden wir
+    auf zahlreiche Verstöße gegen diesen Punkt aufmerksam gemacht.
 
-    Herausheben wollen wir dabei
-    \begin{enumerate}
-    \item  die Einhaltung der in Abschnitt 6.3.3, Unterpunkt ``Network'',
-      aufgeführten Liste der unbedingt anzubietenden Ports. Leider wurden wir
-      auf zahlreiche Verstöße gegen diesen Punkt aufmerksam gemacht.
+    Wir unterstützen darüber hinaus die Empfehlung, keine
+    bzw. möglichst wenige Portrestriktionen vorzunehmen, sowie keine
+    Anwendungs- und Abfangproxies zu verwenden.
 
-      Wir unterstützen darüber hinaus die Empfehlung, keine
-      bzw. möglichst wenige Portrestriktionen vorzunehmen, sowie keine
-      Anwendungs- und Abfangproxies zu verwenden.
-
-    \item die Einhaltung der in Abschnitt 6.3.2 festgelegten Unterstützung
-      anonymer Authentifizierung. Wir bitten, diese Unterstützung auch in den
-      entsprechenden Anleitungen zu dokumentieren.
-    \end{enumerate}
-  \item Falls Portrestriktionen unumgänglich sind, sollten diese öffentlich
-    zugänglich dokumentiert und begründet werden, sowohl für ein- als auch für
-    ausgehende Beschränkungen.
-
-    Wir bitten die GÉANT Association, dies in die eduroam Policy Service Definition
-    als ``MUST''-Anforderung aufzunehmen.
-
-  \item Aufgrund der herausragenden Bedeutung des eduroam-Netzes für die
-    wissenschaftliche Gemeinschaft fordern wir eine ausreichende Ausstattung mit
-    personellen und finanziellen Mitteln zur Aufrechterhaltung, zur Verbesserung
-    und zum Ausbau des Netzwerkes durch die betreibenden Hochschulen.
+  \item die Einhaltung der in Abschnitt 6.3.2 festgelegten Unterstützung
+    anonymer Authentifizierung. Wir bitten, diese Unterstützung auch in den
+    entsprechenden Anleitungen zu dokumentieren.
   \end{enumerate}
+\item Falls Portrestriktionen unumgänglich sind, sollten diese öffentlich
+  zugänglich dokumentiert und begründet werden, sowohl für ein- als auch für
+  ausgehende Beschränkungen.
 
-  Wir bitten diese Hinweise analog für andere hochschulöffentliche Netze zu
-  beherzigen.
+  Wir bitten die GÉANT Association, dies in die eduroam Policy Service Definition
+  als ``MUST''-Anforderung aufzunehmen.
+
+\item Aufgrund der herausragenden Bedeutung des eduroam-Netzes für die
+  wissenschaftliche Gemeinschaft fordern wir eine ausreichende Ausstattung mit
+  personellen und finanziellen Mitteln zur Aufrechterhaltung, zur Verbesserung
+  und zum Ausbau des Netzwerkes durch die betreibenden Hochschulen.
+\end{enumerate}
+
+Wir bitten diese Hinweise analog für andere hochschulöffentliche Netze zu
+beherzigen.
 
 \vfill
 \begin{flushright}
