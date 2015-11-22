@@ -1,0 +1,46 @@
+\documentclass[parskip, 10pt,oneside]{scrartcl}
+
+% Sprache und Encodings
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{epigraph}
+
+% Typographisch interessante Pakete
+\usepackage{microtype} % Randkorrektur und andere Anpassungen
+
+% References to Internet and within the document
+\usepackage[pdftex,colorlinks=false,
+pdftitle={Resolution zur Novelle des Wissenschaftszeitvertragsgesetzes},
+pdfauthor={Björn Guth (Aachen), Jörg Behrmann (FUB), Tobias Löffler (Düsseldorf) und Jan Naumann (FUB)},
+pdfcreator={pdflatex},
+pdfdisplaydoctitle=true]{hyperref}
+
+% Absaetze nicht Einruecken
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+% Formatierung auf A4 anpassen
+\usepackage{geometry}
+\geometry{paper=a4paper,left=20mm,right=20mm,top=10mm,bottom=10mm}
+
+\renewcommand*\dictumwidth{0.95\linewidth}
+
+\hyphenation{anonymer ano-ny-mer}
+\begin{document}
+
+\section*{Resolution zur Novelle des Wissenschaftszeitvertragsgesetzes}
+
+\textbf{Adressaten:} An den Ausschuss für Bildung, Forschung und Technikfolgenabschätzung des Deutschen Bundestages, den Ausschuss für Kulturfragen sowie den Ausschuss für Frauen und Jugend des Deutschen Bundesrates, die bildungspolitischen Sprecher der Fraktionen im Deutschen Bundestag, die für Forschung zuständigen Ministerien der Bundesländer, das für das WissZeitVG zuständige Referat im Bundesministerium für Bildung und Forschung sowie Bundesministerin Johanna Wanka
+
+\textbf{Antragssteller:} Jörg (FUB), Tobi (Düsseldorf), Björn (Aachen), Jan (FUB)
+
+\subsection*{Antrag:}
+Die ZaPF mögen beschließen:
+\begin{quote}
+	\input{WissZeitVG}
+\end{quote}
+
+
+
+\end{document}
