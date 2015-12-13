@@ -6,4 +6,6 @@
 *.toc
 *.swp
 *.swo
+*.dvi
+*.synktex.gz
 auto/
