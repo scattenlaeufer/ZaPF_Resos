@@ -1,0 +1,164 @@
+%---------------------------------------------------------------------------
+% scrlttr2.tex v0.3. (c) by Juergen Fenn <juergen.fenn@gmx.de>
+% Template for a letter to be typeset with scrlttr2.cls from KOMA-Script.
+% Latest version of the LaTeX Project Public License is applicable. 
+% File may not be modified and redistributed under the same name 
+% without the author's prior consent.
+%---------------------------------------------------------------------------
+\documentclass%%
+%---------------------------------------------------------------------------
+  [fontsize=12pt,%%          Schriftgroesse
+%---------------------------------------------------------------------------
+% Satzspiegel
+   paper=a4,%%               Papierformat
+   enlargefirstpage=on,%%    Erste Seite anders
+   firstfoot=off,
+   pagenumber=right,%%   Seitenzahl oben mittig
+%---------------------------------------------------------------------------
+% Layout
+   headsepline=off,%%         Linie unter der Seitenzahl
+   parskip=half,%%           Abstand zwischen Absaetzen
+%---------------------------------------------------------------------------
+% Briefkopf und Anschrift
+   fromalign=right,%%        Plazierung des Briefkopfs
+   fromphone=off,%%           Telefonnummer im Absender
+   fromrule=off,%%           Linie im Absender (aftername, afteraddress)
+   fromfax=off,%%            Faxnummer
+   fromemail=on,%%          Emailadresse
+   fromurl=off,%%            Homepage
+   fromlogo=off,%%           Firmenlogo
+   addrfield=on,%%           Adressfeld fuer Fensterkuverts
+   backaddress=on,%%          ...und Absender im Fenster
+   subject=beforeopening,%%  Plazierung der Betreffzeile
+   locfield=narrow,%%        zusaetzliches Feld fuer Absender
+   foldmarks=on,%%           Faltmarken setzen
+   numericaldate=off,%%      Datum numerisch ausgeben
+   refline=narrow,%%         Geschaeftszeile im Satzspiegel
+%---------------------------------------------------------------------------
+% Formatierung
+   draft=off,%%                Entwurfsmodus
+   %backaddress=plain%%        Keine Linie unter Absender
+  DIV=12
+]{scrlttr2}
+%---------------------------------------------------------------------------
+\usepackage[english,ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{lmodern}
+\usepackage{csquotes}
+\usepackage{pdfpages}
+\usepackage{graphics}
+\usepackage{pdfpages}
+%---------------------------------------------------------------------------
+% Fonts
+\setkomafont{fromname}{\sffamily}
+\setkomafont{fromaddress}{\sffamily}%% statt \small
+\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\mdseries}
+\setkomafont{backaddress}{\mdseries}
+\usepackage{mathptmx}%% Schrift Times
+%\usepackage{mathpazo}%% Schrift Palatino
+%\setkomafont{fromname}{\LARGE}
+%---------------------------------------------------------------------------
+\usepackage{lastpage}
+
+\renewcommand*{\pagemark}{{\usekomafont{pagenumber}{%
+    \pagename\
+    \thepage\ von\ \pageref{LastPage}}}}
+
+\begin{document}
+%---------------------------------------------------------------------------
+% Briefstil und Position des Briefkopfs
+\LoadLetterOption{DIN} %% oder: DINmtext, SN, SNleft, KOMAold.
+\makeatletter
+\@setplength{firstheadvpos}{20mm}
+\@setplength{firstheadwidth}{\paperwidth}
+\ifdim \useplength{toaddrhpos}>\z@
+  \@addtoplength[-2]{firstheadwidth}{\useplength{toaddrhpos}}
+\else
+  \@addtoplength[2]{firstheadwidth}{\useplength{toaddrhpos}}
+\fi
+\@setplength{foldmarkhpos}{6.5mm}
+\@addtoplength{firstfootvpos}{-10mm}
+\makeatother
+%---------------------------------------------------------------------------
+% Absender
+\setkomavar{fromlogo}{\vspace{-1cm}\includegraphics[width=4cm]{logo.pdf}}
+\setkomavar{backaddress}{ZaPF e.V.\\Max-von-Laue-Str. 1\\60438 Frankfurt / Main}
+\setkomavar{fromname}{\includegraphics[width=2cm]{logo.pdf}\\Zusammenkunft aller Physik-Fachschaften\\c/o ZaPF e.V.\\Goethe Universität Frankfurt\\Raum \_\_.208}
+\setkomavar{fromaddress}{Max-von-Laue-Str. 1\\60438 Frankfurt / Main}
+%\setkomavar{fromphone}{}
+%\renewcommand{\phonename}{Telefon}
+\setkomavar{fromemail}{stapf@googlegroups.com}
+\setkomavar{backaddressseparator}{ – }
+\setkomavar{signature}{Karola Schulz\\Sprecherin des StAPF}
+%\setkomavar{frombank}{}
+%\setkomavar{location}{\\[8ex]\raggedleft{\footnotesize{\usekomavar{fromaddress}\\
+%      Telefon:\ usekomavar{fromphone}}}}%% Neben dem Adressfenster
+%---------------------------------------------------------------------------
+%\firsthead{Frei gestalteter Briefkopf}
+%---------------------------------------------------------------------------
+%\firstfoot{}
+%---------------------------------------------------------------------------
+% Geschaeftszeilenfelder
+\setkomavar{place}{Konstanz}
+\setkomavar{placeseparator}{, den }
+\setkomavar{date}{\today}
+%\setkomavar{yourmail}{1. 1. 2003}%% 'Ihr Schreiben...'
+%\setkomavar{yourref} {abcdefg}%%    'Ihr Zeichen...'
+%\setkomavar{myref}{Test}%%      Unser Zeichen
+%\setkomavar{invoice}{123}%% Rechnungsnummer
+%\setkomavar{phoneseparator}{}
+%---------------------------------------------------------------------------
+% Versendungsart
+%\setlengthtoplength{\fill}{specialmailindent}
+%\setkomavar{specialmail}{Einschreiben mit Rückschein}
+%---------------------------------------------------------------------------
+% Anlage neu definieren
+\renewcommand{\enclname}{Anlagen}
+\setkomavar{enclseparator}{: }
+%---------------------------------------------------------------------------
+% Seitenstil
+%\pagestyle{plain}%% keine Header in der Kopfzeile
+%---------------------------------------------------------------------------
+\newcommand{\massmail}[2]{
+\begin{letter}{#1}
+%---------------------------------------------------------------------------
+% Weitere Optionen
+\KOMAoptions{%%
+}
+%---------------------------------------------------------------------------
+\setkomavar{subject}{\textbf{Resolution zu Zwei-Klassen-Studiensystemen}}
+%---------------------------------------------------------------------------
+\opening{#2}
+
+die Zusammenkunft aller Physikfachschaften hat auf ihrer letzten Tagung am 08.05.20165 die folgende Resolution zu Zwei-Klassen-Studiensystemen verabschiedet.
+
+Für Kommentare und Rückfragen stehen wir Ihnen jederzeit zur Verfügung und verbleiben 
+
+Mit freundlichen Grüßen,
+
+\closing{Im Auftrag der ZaPF}
+%---------------------------------------------------------------------------
+%\ps{PS: 134}
+%\encl{}
+%\cc{Die Menschheit}
+%---------------------------------------------------------------------------
+
+\newpage
+\includepdf[pages=-]{Zweiklassenstudiensysteme.pdf}
+
+\end{letter}
+}
+\massmail{Hochschulrektorenkonferenz\\Ahrstraße 39\\53175 Bonn}{Sehr geehrte Damen und Herren,}
+\massmail{Wolfgang Tiefensee\\Max-Reger-Straße 4-8\\99096 Erfurt }{Sehr geehrter Herr Minister Tiefensee,}
+
+
+
+
+
+
+%---------------------------------------------------------------------------
+\end{document}
+%---------------------------------------------------------------------------
