@@ -1,0 +1,267 @@
+%---------------------------------------------------------------------------
+% scrlttr2.tex v0.3. (c) by Juergen Fenn <juergen.fenn@gmx.de>
+% Template for a letter to be typeset with scrlttr2.cls from KOMA-Script.
+% Latest version of the LaTeX Project Public License is applicable. 
+% File may not be modified and redistributed under the same name 
+% without the author's prior consent.
+%---------------------------------------------------------------------------
+\documentclass%%
+%---------------------------------------------------------------------------
+  [fontsize=12pt,%%          Schriftgroesse
+%---------------------------------------------------------------------------
+% Satzspiegel
+   paper=a4,%%               Papierformat
+   enlargefirstpage=on,%%    Erste Seite anders
+   firstfoot=off,
+   pagenumber=right,%%   Seitenzahl oben mittig
+%---------------------------------------------------------------------------
+% Layout
+   headsepline=off,%%         Linie unter der Seitenzahl
+   parskip=half,%%           Abstand zwischen Absaetzen
+%---------------------------------------------------------------------------
+% Briefkopf und Anschrift
+   fromalign=right,%%        Plazierung des Briefkopfs
+   fromphone=off,%%           Telefonnummer im Absender
+   fromrule=off,%%           Linie im Absender (aftername, afteraddress)
+   fromfax=off,%%            Faxnummer
+   fromemail=on,%%          Emailadresse
+   fromurl=off,%%            Homepage
+   fromlogo=off,%%           Firmenlogo
+   addrfield=on,%%           Adressfeld fuer Fensterkuverts
+   backaddress=on,%%          ...und Absender im Fenster
+   subject=beforeopening,%%  Plazierung der Betreffzeile
+   locfield=narrow,%%        zusaetzliches Feld fuer Absender
+   foldmarks=on,%%           Faltmarken setzen
+   numericaldate=off,%%      Datum numerisch ausgeben
+   refline=narrow,%%         Geschaeftszeile im Satzspiegel
+%---------------------------------------------------------------------------
+% Formatierung
+   draft=off,%%                Entwurfsmodus
+   %backaddress=plain%%        Keine Linie unter Absender
+  DIV=12
+]{scrlttr2}
+%---------------------------------------------------------------------------
+\usepackage[english,ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{lmodern}
+\usepackage{csquotes}
+\usepackage{pdfpages}
+\usepackage{graphics}
+\usepackage{pdfpages}
+%---------------------------------------------------------------------------
+% Fonts
+\setkomafont{fromname}{\sffamily}
+\setkomafont{fromaddress}{\sffamily}%% statt \small
+\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\mdseries}
+\setkomafont{backaddress}{\mdseries}
+\usepackage{mathptmx}%% Schrift Times
+%\usepackage{mathpazo}%% Schrift Palatino
+%\setkomafont{fromname}{\LARGE}
+%---------------------------------------------------------------------------
+\usepackage{lastpage}
+
+\renewcommand*{\pagemark}{{\usekomafont{pagenumber}{%
+    \pagename\
+    \thepage\ von\ \pageref{LastPage}}}}
+
+\begin{document}
+%---------------------------------------------------------------------------
+% Briefstil und Position des Briefkopfs
+\LoadLetterOption{DIN} %% oder: DINmtext, SN, SNleft, KOMAold.
+\makeatletter
+\@setplength{firstheadvpos}{20mm}
+\@setplength{firstheadwidth}{\paperwidth}
+\ifdim \useplength{toaddrhpos}>\z@
+  \@addtoplength[-2]{firstheadwidth}{\useplength{toaddrhpos}}
+\else
+  \@addtoplength[2]{firstheadwidth}{\useplength{toaddrhpos}}
+\fi
+\@setplength{foldmarkhpos}{6.5mm}
+\@addtoplength{firstfootvpos}{-10mm}
+\makeatother
+%---------------------------------------------------------------------------
+% Absender
+\setkomavar{fromlogo}{\vspace{-1cm}\includegraphics[width=4cm]{logo.pdf}}
+\setkomavar{backaddress}{ZaPF e.V.\\Max-von-Laue-Str. 1\\60438 Frankfurt / Main}
+\setkomavar{fromname}{\includegraphics[width=2cm]{logo.pdf}\\Zusammenkunft aller Physik-Fachschaften\\c/o ZaPF e.V.\\Goethe Universität Frankfurt\\Raum \_\_.208}
+\setkomavar{fromaddress}{Max-von-Laue-Str. 1\\60438 Frankfurt / Main}
+%\setkomavar{fromphone}{}
+%\renewcommand{\phonename}{Telefon}
+\setkomavar{fromemail}{stapf@googlegroups.com}
+\setkomavar{backaddressseparator}{ – }
+\setkomavar{signature}{Karola Schulz\\Sprecherin des StAPF}
+%\setkomavar{frombank}{}
+%\setkomavar{location}{\\[8ex]\raggedleft{\footnotesize{\usekomavar{fromaddress}\\
+%      Telefon:\ usekomavar{fromphone}}}}%% Neben dem Adressfenster
+%---------------------------------------------------------------------------
+%\firsthead{Frei gestalteter Briefkopf}
+%---------------------------------------------------------------------------
+%\firstfoot{}
+%---------------------------------------------------------------------------
+% Geschaeftszeilenfelder
+\setkomavar{place}{Konstanz}
+\setkomavar{placeseparator}{, den }
+\setkomavar{date}{\today}
+%\setkomavar{yourmail}{1. 1. 2003}%% 'Ihr Schreiben...'
+%\setkomavar{yourref} {abcdefg}%%    'Ihr Zeichen...'
+%\setkomavar{myref}{Test}%%      Unser Zeichen
+%\setkomavar{invoice}{123}%% Rechnungsnummer
+%\setkomavar{phoneseparator}{}
+%---------------------------------------------------------------------------
+% Versendungsart
+%\setlengthtoplength{\fill}{specialmailindent}
+%\setkomavar{specialmail}{Einschreiben mit Rückschein}
+%---------------------------------------------------------------------------
+% Anlage neu definieren
+\renewcommand{\enclname}{Anlagen}
+\setkomavar{enclseparator}{: }
+%---------------------------------------------------------------------------
+% Seitenstil
+%\pagestyle{plain}%% keine Header in der Kopfzeile
+%---------------------------------------------------------------------------
+\newcommand{\massmail}[2]{
+\begin{letter}{#1}
+%---------------------------------------------------------------------------
+% Weitere Optionen
+\KOMAoptions{%%
+}
+%---------------------------------------------------------------------------
+\setkomavar{subject}{\textbf{Resolution zur Gleichbehandlung aller Statusgruppen bei Quotenregelungen}}
+%---------------------------------------------------------------------------
+\opening{#2}
+
+die Zusammenkunft aller Physikfachschaften hat auf ihrer letzten Tagung am 08.05.20165 die folgende Resolution zur Gleichbehandlung aller Statusgruppen bei Quotenregelungen verabschiedet.
+
+Für Kommentare und Rückfragen stehen wir Ihnen jederzeit zur Verfügung und verbleiben 
+
+Mit freundlichen Grüßen,
+
+\closing{Im Auftrag der ZaPF}
+%---------------------------------------------------------------------------
+%\ps{PS: 134}
+%\encl{}
+%\cc{Die Menschheit}
+%---------------------------------------------------------------------------
+
+\newpage
+\includepdf[pages=-]{Frauenquotenreso.pdf}
+
+\end{letter}
+}
+\massmail{Bundesministerium für Bildung und Forschung\\Dienstsitz Berlin\\11055 Berlin}{Sehr geehrte Damen und Herren,}
+\massmail{Thüringer Ministerium für Bildung, Jugend und Sport\\Postfach 900463\\99107 Erfurt}{Sehr geehrte Damen und Herren,}
+\massmail{Ministerium für Bildung, Jugend und Sport\\Land Brandenburg\\Heinrich-Mann-Allee 107\\14473 Potsdam}{Sehr geehrte Damen und Herren,}
+\massmail{Sächsisches Staatsministerium für Kultus\\Postfach 100910\\01079 Dresden}{Sehr geehrte Damen und Herren,}
+\massmail{Ministerium für Bildung\\Turmschanzenstraße 32\\39114 Magdeburg}{Sehr geehrte Damen und Herren,}
+\massmail{Ministerium für Wirtschaft, Wissenschaft und Digitalisierung\\Hasselbachstraße 4\\39104 Magdeburg}{Sehr geehrte Damen und Herren,}
+\massmail{Niedersächsisches Ministerium für Wissenschaft und Kultur\\Leibnizufer 9\\30169 Hannover}{Sehr geehrte Damen und Herren,}
+\massmail{Ministerium für Bildung, Wissenschaft und Kultur\\Werderstraße 124\\19055 Schwerin}{Sehr geehrte Damen und Herren,}
+\massmail{Hessisches Kultusministerium\\Luisenplatz 10\\65185 Wiesbaden}{Sehr geehrte Damen und Herren,}
+\massmail{Ministerium für Innovation, Wissenschaft und Forschung\\Völklinger Straße 49\\40221 Düsseldorf}{Sehr geehrte Damen und Herren,}
+\massmail{Bayrisches Staatsministerium für Bildung und Kultus, Wissenschaft und Kunst\\Salvatorstraße 2\\80333 München}{Sehr geehrte Damen und Herren,}
+\massmail{Ministerium für Wissenschaft, Forschung und Kunst Baden Württemberg\\Königstraße 46\\70173 Stuttgart}{Sehr geehrte Damen und Herren,}
+\massmail{Ministerium für Schule und Berufsbildung\\Jensendamm 5\\24103 Kiel}{Sehr geehrte Damen und Herren,}
+\massmail{Ministerium für Bildung und Kultur\\Trierer Str. 33\\66111 Saarbrücken}{Sehr geehrte Damen und Herren,}
+\massmail{Behörde für Wissenschaft, Forschung und Gleichstellung Hamburg\\Hamburger Str. 37,\\2083 Hamburg}{Sehr geehrte Damen und Herren,}
+\massmail{Die Senatorin für Wissenschaft, Gesundheit und Verbraucherschutz\\Contrescarpe 72\\28195 Bremen}{Sehr geehrte Damen und Herren,}
+\massmail{Senatsverwaltung für Bildung, Jugend und Wissenschaft\\Bernhard-Weiß-Straße 6\\10178 Berlin}{Sehr geehrte Damen und Herren,}
+\massmail{Ministerium für Wissenschaft, Weiterbildung und Kultur\\Mittlere Bleiche 61\\55116 Mainz}{Sehr geehrte Damen und Herren,}
+
+\massmail{CDU/CSU-Fraktion im Deutschen Bundestag\\Platz der Republik 1\\11011 Berlin}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Bundestagsfraktion\\Platz der Republik 1\\11011 Berlin}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion Die Linke im Bundestag\\Platz der Republik 1\\11011 Berlin}{Sehr geehrte Damen und Herren,}
+\massmail{Bundestagsfraktion Bündnis 90/Die Grünen\\Platz der Republik 1\\11011 Berlin}{Sehr geehrte Damen und Herren,}
+\massmail{CDU-Fraktion im Thüringer Landtag\\Jürgen-Fuchs-Straße 1\\99096 Erfurt}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion DIE LINKE im Thüringer Landtag\\Jürgen-Fuchs-Straße 1\\99096 Erfurt}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Fraktion im Thüringer Landtag\\Jürgen-Fuchs-Straße 1\\99096 Erfurt}{Sehr geehrte Damen und Herren,}
+\massmail{AfD-Fraktion im Thüringer Landtag\\Jürgen-Fuchs-Straße 1\\99096 Erfurt}{Sehr geehrte Damen und Herren,}
+\massmail{BÜNDNIS 90/DIE GRÜNEN Landtagsfraktion Thüringen\\Jürgen-Fuchs-Straße 1\\99096 Erfurt}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Fraktion\\Landtag Brandenburg\\Postfach 601064\\14410 Potsdam}{Sehr geehrte Damen und Herren,}
+\massmail{CDU-Fraktion\\Landtag Brandenburg\\Postfach 601064\\14410 Potsdam}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion DIE LINKE\\Landtag Brandenburg\\Postfach 601064\\14410 Potsdam}{Sehr geehrte Damen und Herren,}
+\massmail{AfD-Fraktion\\Landtag Brandenburg\\Postfach 601064\\14410 Potsdam}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion BÜNDNIS 90/DIE GRÜNEN\\Landtag Brandenburg\\Postfach 601064\\14410 Potsdam}{Sehr geehrte Damen und Herren,}
+\massmail{BVB/FREIE WÄHLER Gruppe im Landtag Brandenburg\\Alter Markt 1\\14467 Potsdam}{Sehr geehrte Damen und Herren,}
+\massmail{CDU-Fraktion des Sächsischen Landtages\\Bernhard-von-Lindenau-Platz 1\\01067 Dresden}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion DIE LINKE im Sächsischen Landtag\\Bernhard-von-Lindenau-Platz 1\\01067 Dresden}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Fraktion im Sächsischen Landtag\\Bernhard-von-Lindenau-Platz 1\\01067 Dresden}{Sehr geehrte Damen und Herren,}
+\massmail{AfD Fraktion im sächsischen Landtag\\Bernhard-von-Lindenau-Platz 1\\01067 Dresden}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion BÜNDNIS 90/DIE GRÜNEN im Sächsischen Landtag\\Bernhard-von-Lindenau-Platz 1\\01067 Dresden}{Sehr geehrte Damen und Herren,}
+\massmail{CDU-Fraktion im Landtag von Sachsen-Anhalt\\Domplatz 6-9\\39104 Magdeburg}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Fraktion im Landtag von Sachsen-Anhalt\\Domplatz 6-9\\39104 Magdeburg}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion BÜNDNIS 90/DIE GRÜNEN im Landtag Sachsen-Anhalt\\Domplatz 6-9\\39104 Magdeburg}{Sehr geehrte Damen und Herren,}
+\massmail{Landtag von Sachsen-Anhalt, Fraktion DIE LINKE\\Domplatz 6-9\\39104 Magdeburg}{Sehr geehrte Damen und Herren,}
+\massmail{AFD Landesverband Sachsen-Anhalt\\Schönebecker Straße 11-13\\39104 Magdeburg}{Sehr geehrte Damen und Herren,}
+\massmail{CDU-Fraktion im Niedersächsischen Landtag\\Hannah-Arendt-Platz 1\\30159 Hannover}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Fraktion im Niedersächsischen Landtag\\Hannah-Arendt-Platz 1\\30159 Hannover}{Sehr geehrte Damen und Herren,}
+\massmail{Bündnis 90/DIEGRÜNEN\\im Landtag Niedersachsen\\Hannah-Arendt-Platz 1\\30159 Hannover}{Sehr geehrte Damen und Herren,}
+\massmail{FDP-Fraktion im Niedersächsischen Landtag\\Hannah-Arendt-Platz 1\\30159 Hannover}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Fraktion im Landtag Mecklenburg-Vorpommern\\Lennéstraße 1\\19053 Schwerin}{Sehr geehrte Damen und Herren,}
+\massmail{CDU-Fraktion im Landtag Mecklenburg-Vorpommern\\Lennéstraße 1\\19053 Schwerin}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion DIE LINKE im Landtag Mecklenburg-Vorpommern\\Lennéstraße 1\\19053 Schwerin}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion BÜNDNIS 90/DIE GRÜNEN im Landtag Mecklenburg-Vorpommern\\Lennéstraße 1\\19053 Schwerin}{Sehr geehrte Damen und Herren,}
+\massmail{NPD-Fraktion im Landtag Mecklenburg-Vorpommern\\Lennéstraße 1\\19053 Schwerin}{Sehr geehrte Damen und Herren,}
+\massmail{CDU-Fraktion im Hessischen Landtag\\Schlossplatz 1-3\\65183 Wiesbaden}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Fraktion im Hessischen Landtag\\Schlossplatz 1-3\\65183 Wiesbaden}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion BÜNDNIS 90/DIE GRÜNEN im Hessischen Landtag\\Schlossplatz 1-3\\65183 Wiesbaden}{Sehr geehrte Damen und Herren,}
+\massmail{DIE LINKE. Fraktion im Hessischen Landtag\\Schlossplatz 1-3\\65183 Wiesbaden}{Sehr geehrte Damen und Herren,}
+\massmail{FDP-Fraktion im Hessischen Landtag\\Schlossplatz 1-3\\65183 Wiesbaden}{Sehr geehrte Damen und Herren,}
+\massmail{CDU-Landtagsfraktion Nordrhein-Westfalen\\Platz des Landtags 1\\40221 Düsseldorf}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion Bündnis 90/Die Grünen im Landtag Nordrhein-Westfalen\\Platz des Landtags 1\\40221 Düsseldorf}{Sehr geehrte Damen und Herren,}
+\massmail{FDP-Landtagsfraktion Nordrhein-Westfalen\\Büro des Parlamentarischen Geschäftsführers\\Platz des Landtags 1\\40221 Düsseldorf}{Sehr geehrte Damen und Herren}
+\massmail{Piratenfraktion im Landtag Nordrhein-Westfalen\\Fraktionsvorstand\\Platz des Landtags 1\\40221 Düsseldorf}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Landtagsfraktion Nordrhein-Westfalen\\Platz des Landtags 1\\40221 Düsseldorf}{Sehr geehrte Damen und Herren,}
+\massmail{CSU-Fraktion im Bayerischen Landtag\\Maximilianeum\\Max-Planck-Straße 1\\81627 München}{Sehr geehrte Damen und Herren,}
+\massmail{Bayern SPD-Landtagsfraktion\\Maximilianeum\\Max-Planck-Straße 1\\81627 München}{Sehr geehrte Damen und Herren,}
+\massmail{FREIE WÄHLER Landtagsfraktion\\Maximilianeum\\Max-Planck-Straße 1\\81627 München}{Sehr geehrte Damen und Herren,}
+\massmail{Bündnis 90/Die Grünen im Bayerischen Landtag\\Maximilianeum\\Max-Planck-Straße 1\\81627 München}{Sehr geehrte Damen und Herren,}
+\massmail{Bündnis 90/Die Grünen im Landtag von Baden-Württemberg\\Konrad-Adenauer-Straße 12\\70173 Stuttgart}{Sehr geehrte Damen und Herren,}
+\massmail{CDU-Fraktion im Landtag von Baden-Württemberg\\Konrad-Adenauer-Straße 12\\70173 Stuttgart}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Landtagsfraktion Baden-Württemberg\\Konrad-Adenauer-Straße 12\\70173 Stuttgart}{Sehr geehrte Damen und Herren,}
+\massmail{FDP/DVP-Fraktion im Landtag von Baden-Württemberg\\Konrad-Adenauer-Straße 12\\70173 Stuttgart}{Sehr geehrte Damen und Herren,}
+\massmail{AFD-Fraktion im Landtag von Baden-Württemberg\\Konrad-Adenauer-Straße 3\\70173 Stuttgart}{Sehr geehrte Damen und Herren,}
+\massmail{CDU Fraktion im Schleswig-Holsteinischen Landtag\\Düsternbrooker Weg 70\\24105 Kiel}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Landtagsfraktion\\Düsternbrooker Weg 70\\24105 Kiel}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion Bündnis 90/Die Grünen im Landtag Schleswig-Holstein\\Düsternbrooker Weg 70\\24105 Kiel}{Sehr geehrte Damen und Herren,}
+\massmail{FDP-Fraktion im Schleswig-Holsteinischen Landtag\\Düsternbrooker Weg 70\\24105 Kiel}{Sehr geehrte Damen und Herren,}
+\massmail{Piratenfraktion im Schleswig-Holsteinischen Landtag\\Düsternbrooker Weg 70\\24105 Kiel}{Sehr geehrte Damen und Herren,}
+\massmail{Büro Landtag\\SSW-Landtagsfraktion\\Düsternbrooker Weg 70\\24105 Kiel}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Fraktion im Landtag des Saarlandes\\Franz-Josef-Röder-Straße 17\\66119 Saarbrücken}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion DIE LINKE im Landtag des Saarlandes\\Franz-Josef-Röder-Straße 17\\66119 Saarbrücken}{Sehr geehrte Damen und Herren,}
+\massmail{Piratenfraktion im Landtag des Saarlandes\\Franz-Josef-Röder-Straße 17\\66119 Saarbrücken}{Sehr geehrte Damen und Herren,}
+\massmail{BÜNDNIS 90/DIE GRÜNEN\\Fraktion im Landtag des Saarlandes\\Franz-Josef-Röder-Straße 17\\66119 Saarbrücken}{Sehr geehrte Damen und Herren,}
+\massmail{CDU Landtagsfraktion\\Franz-Josef-Röder-Straße 17\\66119 Saarbrücken}{Sehr geehrte Damen und Herren,}
+\massmail{FDP-Fraktion in der Hamburgischen Bürgerschaft\\Rathausmarkt 1\\20095 Hamburg}{Sehr geehrte Damen und Herren,}
+\massmail{AfD-Fraktion in der Hamburgischen Bürgerschaft\\Rathausmarkt 1\\20095 Hamburg}{Sehr geehrte Damen und Herren,}
+\massmail{CDU-Bürgerschaftsfraktion Hamburg\\Rathausmarkt 1\\20095 Hamburg}{Sehr geehrte Damen und Herren,}
+\massmail{GRÜNE Bürgerschaftsfraktion Hamburg\\Rathausmarkt 1\\20095 Hamburg}{Sehr geehrte Damen und Herren,}
+\massmail{DIE LINKE. Fraktion in der Hamburgischen Bürgerschaft\\Rathausmarkt 1\\20095 Hamburg}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Bürgerschaftsfraktion\\Rathausmarkt 1\\20095 Hamburg}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion der Sozialdemokratischen Partei Deutschlands\\Wachtstraße 27-29\\28195  Bremen}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion der Christlich Demokratischen Union Deutschlands\\Am Wall 135\\28195 Bremen}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion Bündnis 90/Die Grünen\\Schlachte 19/20\\28195 Bremen}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion DIE LINKE\\Tiefer 8\\28195 Bremen}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion der Freien Demokratischen Partei\\Sandstraße 2\\28195 Bremen}{Sehr geehrte Damen und Herren,}
+\massmail{Gruppe Allianz für Fortschritt und Aufbruch\\Carl-Ronning-Str. 13\\28195 Bremen}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Fraktion, des Abgeordnetenhauses von Berlin\\Niederkirchnerstraße 5\\10117 Berlin}{Sehr geehrte Damen und Herren,}
+\massmail{CDU-Fraktion Berlin\\Preußischer Landtag\\10111 Berlin}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion Bündnis 90/Die Grünen im Abgeordnetenhaus von Berlin\\Niederkirchnerstraße\\10117 Berlin}{Sehr geehrte Damen und Herren,}
+\massmail{Fraktion Die Linke im Abgeordnetenhaus von Berlin\\Niederkirchnerstraße\\10117 Berlin}{Sehr geehrte Damen und Herren,}
+\massmail{Piratenfraktion im Abgeordnetenhaus Berlin\\Niederkirchnerstraße\\10117 Berlin}{Sehr geehrte Damen und Herren,}
+\massmail{SPD-Fraktion im Landtag Rheinland-Pfalz\\Kaiser-Friedrich-Straße 3\\ 55116 Mainz}{Sehr geehrte Damen und Herren,}
+\massmail{CDU Landesverband Rheinland-Pfalz\\Rheinallee 1a-d\\55116 Mainz}{Sehr geehrte Damen und Herren,}
+\massmail{AfD Landesgeschäftsstelle, Rheinland-Pfalz\\Schusterstraße 22\\55116 Mainz}{Sehr geehrte Damen und Herren,}
+\massmail{FDP Landtagsfraktion Rheinland-Pfalz\\Kaiser-Friedrich-Straße\\55116 Mainz}{Sehr geehrte Damen und Herren,}
+\massmail{BÜNDNIS 90/DIE GRÜNEN  Rheinland-Pfalz\\Frauenlobstraße 59-61\\55118 Mainz}{Sehr geehrte Damen und Herren,}
+
+
+
+
+
+
+%---------------------------------------------------------------------------
+\end{document}
+%---------------------------------------------------------------------------
