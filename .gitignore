@@ -9,3 +9,4 @@
 *.dvi
 *.synktex.gz
 auto/
+**/Thumbs.db
