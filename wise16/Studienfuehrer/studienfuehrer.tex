@@ -1,0 +1,92 @@
+\documentclass[DIV=calc]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+
+\usepackage{fixltx2e}
+\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+
+\usepackage{lmodern}      % Ersatz fuer Computer Modern-Schriften
+\usepackage{hfoldsty}
+
+\usepackage{fourier}             % Schriftart
+\usepackage[scaled=0.81]{helvet}     % Schriftart
+
+\usepackage{url}
+\usepackage{tocloft}             % Paket für Table of Contents
+
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+
+\usepackage{hyperref}
+\hypersetup{
+ colorlinks=true,    
+ linkcolor=black,    % Farbe der internen Links (u.a. Table of Contents)
+ urlcolor=black,    % Farbe der url-links
+ citecolor=black} % Farbe der Literaturverzeichnis-Links
+
+\usepackage{mdwlist}     % Änderung der Zeilenabstände bei itemize und enumerate
+
+\parindent 0pt                 % Absatzeinrücken verhindern
+\parskip 12pt                 % Absätze durch Lücke trennen
+
+\usepackage{titlesec}    % Abstand nach Überschriften neu definieren
+\titlespacing{\subsection}{0ex}{3ex}{-1ex}
+\titlespacing{\subsubsection}{0ex}{3ex}{-1ex}        
+
+% \pagestyle{empty}
+\setlength{\textheight}{23cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{www.zapfev.de\\stapf@zapf.in}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+
+\begin{document}
+\hspace{0.87\textwidth}
+\begin{minipage}{120pt}
+\vspace{-1.8cm}
+\includegraphics[width=80pt]{logo.pdf}
+\centering
+\small Zusammenkunft aller Physik-Fachschaften
+\end{minipage}
+\begin{center}
+\huge{Resolution der Zusammenkunft aller Physik-Fachschaften} \\
+\normalsize
+\end{center}
+
+\vspace{1cm}
+\section*{Resolution zum Studienführer}
+Die Zusammenkunft aller Physikfachschaften ist seit einiger Zeit dabei einen Studienführer zu erstellen. Dieser soll einerseits für Studieninteressierte wichtige Informationen enthalten, wenn sie sich für einen Studienort entscheiden. Zudem soll der Studienführer auch eine Wechseldatenbank enthalten, die es Bachelorstudierenden erleichtern soll zum Master eine passende Universität zu finden. Auch eine Detailansicht zu den einzelnen Studienfächern soll möglich sein.
+
+Die Inhalte der Datenbanken sollen jeweils durch die Fachschaften geregelt werden und es soll ein Vergleich aufgrund objektiver Kriterien durchgeführt werden können. Zudem soll die Seite so gestaltet sein, dass sie einfach erweiterbar ist. Eine Ausweitung auf andere Fachbereiche soll in Zukunft, bei Interesse, möglich sein. Deshalb würden wir gerne wissen, ob
+
+\begin{itemize}
+\item ihr prinzipiell Interesse daran habt, dass auch eure Studienfächer auf der Seite mit abgebildet werden
+\item der momentane Anforderungskatalog an die Seite eure Studienfächer abbilden kann, und
+\item falls nicht: was ist nicht abbildbar?
+\end{itemize}
+
+Das Projekt befindet sich momentan im Planungsstadium. Das Release des Studienführers, zumindest für das Fach Physik, ist für Ende 2019 geplant.
+
+Gerne könnt ihr uns für Rückfragen auch kontaktieren und die Verantwortlichen schauen (wenn es machbar ist zumindest per Skype) auf eurer Tagung vorbei.
+\vfill
+\begin{flushright}
+Verabschiedet am 13.11.2016 in Dresden
+\end{flushright}
+
+
+
+
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
