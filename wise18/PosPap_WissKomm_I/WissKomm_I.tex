@@ -1,0 +1,110 @@
+\documentclass[DIV=calc]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[draft, markup=underlined]{changes}
+\usepackage{csquotes}
+
+\usepackage{ulem}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{paralist}
+\usepackage{fixltx2e}
+%\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+
+\usepackage{lmodern}                        % Ersatz fuer Computer Modern-Schriften
+%\usepackage{hfoldsty}
+
+%\usepackage{fourier}             % Schriftart
+\usepackage[scaled=0.81]{helvet}     % Schriftart
+
+\usepackage{url}
+\usepackage{tocloft}             % Paket für Table of Contents
+
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,    
+    linkcolor=black,    % Farbe der internen Links (u.a. Table of Contents)
+    urlcolor=black,    % Farbe der url-links
+    citecolor=black} % Farbe der Literaturverzeichnis-Links
+
+\usepackage{mdwlist}     % Änderung der Zeilenabstände bei itemize und enumerate
+\usepackage{draftwatermark} % Wasserzeichen ``Entwurf'' 
+\SetWatermarkText{}
+
+\parindent 0pt                 % Absatzeinrücken verhindern
+\parskip 12pt                 % Absätze durch Lücke trennen
+
+\setlength{\textheight}{23cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{www.zapfev.de\\stapf@zapf.in}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+\newcommand{\gen}{*innen}
+\addto{\captionsngerman}{\renewcommand{\refname}{Quellen}}
+
+%%%% Mit-TeXen Kommandoset
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+
+\newcommand{\replace}[2]{
+    \sout{\textcolor{blue}{#1}}~\textcolor{blue}{#2}
+}
+
+\newcommand{\delete}[1]{
+    \sout{\textcolor{red}{#1}}
+}
+
+\newcommand{\add}[1]{
+    \textcolor{blue}{#1}
+}
+
+
+
+\begin{document}
+    \hspace{0.87\textwidth}
+    \begin{minipage}{120pt}
+        \vspace{-1.8cm}
+        \includegraphics[width=80pt]{../logo.pdf}
+        \centering
+        \small Zusammenkunft aller Physik-Fachschaften
+    \end{minipage}
+    \begin{center}
+        \huge{Positionspapier der Zusammenkunft aller Physik-Fachschaften}\vspace{.25\baselineskip}\\
+        \normalsize
+    \end{center}
+    \vspace{1cm}
+
+\section*{Zur Rolle der Wissenschaftskommunikation}
+
+Dieses Positionspapier ersetzt das Positionspapier des gleichen Titels, das auf der Winter-ZaPF 2017 in Siegen beschlossen wurde.\\~\\
+Die Zusammenkunft aller Physikfachschaften (ZaPF) positioniert sich für eine starke Wissenschaftskommunikation und weist auf die besondere gesellschaftliche Verantwortung von Wissenschaftler*innen hin.
+Bisher sehen wir die Wissenschaftskommunikation als von den Universitäten unterschätzt, jedoch unabdingbar an.
+Neben der Bildung der Gesellschaft und der Verbreitung von Wissen soll Wissenschaftskommunikation ebenso der Rechtfertigung, aber auch der gesellschaftlichen Kontrolle der Wissenschaft dienen.
+Sie soll Forschung transparenter machen, Neugierde wecken, zum Nachdenken anregen, Akzeptanz für Wissenschaft und Forschung vergrößern und insbesondere mögliche Ängste in der Gesellschaft vor wissenschaftlichen Entwicklungen nehmen. 
+Wissenschaft muss Teil der gesellschaftlichen und politischen Diskussion sein, deshalb sollen Wissenschaftler*innen sich aktiv in diese einmischen und  Unwissenschaftlichkeit entgegentreten.
+
+Eine gute Wissenschaftskommunikation bereitet ihren Gegenstand zielgruppenorientiert auf. 
+Ebenso wie die Kommunikation von Forschung nach innen zur Aufgabe von Wissenschaftler*innen gehört, sei es durch Abschlussarbeiten, Publikationen oder wissenschaftliche Vorträge, so sollten Sie auch nach außen wirken, z.B. je nach Zielgruppe durch Formate wie Podcasts, Blogs, Videos, Science Slams oder wissenschaftliche Artikel in Zeitschriften.\\
+
+Wichtig ist hierbei das Erschließen neuer Zielgruppen und die Nachwuchsförderung.
+Auf für Wissenschaftler*innen teils oft schwer zu erreichende Gruppen wie bildungsferne Schichten oder Menschen mit Migrationshintergrund soll aktiv zugegangen werden.
+Dialog und Integration können und sollten auch über Wissenschaft stattfinden.\\
+
+Eine besondere Rolle in der Ausübung sowie der Stärkung der Wissenschaftskommunikation sprechen wir den Universitäten und weiteren Hochschulen zu.
+Diese sollen bei Durchführung von Veranstaltungen sowie der Sensibilisierung und Ausbildung von zukünftigen Wissenschaftler*innen der Wissenschaftskommunikation eine besondere Beachtung schenken.
+Wir begrüßen das Engagement für Veranstaltungen wie z.B. Lange Nächte der Wissenschaften oder Schüleruniversitäten und sehen großes Potenzial in der Integration von Wissenschaftskommunikation in die akademische Ausbildung.
+\vfill
+    \begin{flushright}
+        Verabschiedet am 25.11.2018 in Würzburg
+    \end{flushright}
+\end{document}
+

@@ -1,0 +1,123 @@
+\documentclass[DIV=calc]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[draft, markup=underlined]{changes}
+\usepackage{csquotes}
+
+\usepackage{ulem}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{paralist}
+\usepackage{fixltx2e}
+%\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+
+\usepackage{lmodern}                        % Ersatz fuer Computer Modern-Schriften
+%\usepackage{hfoldsty}
+
+%\usepackage{fourier}             % Schriftart
+\usepackage[scaled=0.81]{helvet}     % Schriftart
+
+\usepackage{url}
+\usepackage{tocloft}             % Paket für Table of Contents
+
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,    
+    linkcolor=black,    % Farbe der internen Links (u.a. Table of Contents)
+    urlcolor=black,    % Farbe der url-links
+    citecolor=black} % Farbe der Literaturverzeichnis-Links
+
+\usepackage{mdwlist}     % Änderung der Zeilenabstände bei itemize und enumerate
+\usepackage{draftwatermark} % Wasserzeichen ``Entwurf'' 
+\SetWatermarkText{}
+
+\parindent 0pt                 % Absatzeinrücken verhindern
+\parskip 12pt                 % Absätze durch Lücke trennen
+
+\setlength{\textheight}{23cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{www.zapfev.de\\stapf@zapf.in}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+\newcommand{\gen}{*innen}
+\addto{\captionsngerman}{\renewcommand{\refname}{Quellen}}
+
+%%%% Mit-TeXen Kommandoset
+\usepackage[normalem]{ulem}
+\usepackage{soul}
+\usepackage{xcolor}
+
+\newcommand{\replace}[2]{
+    \sout{#1} \textcolor{blue}{#2}
+}
+
+\newcommand{\delete}[1]{
+    %\sout{\textcolor{red}{#1}}
+    \sout{#1}
+}
+
+\definecolor{darkgreen}{RGB}{19,107,69}
+
+\newcommand{\add}[1]{
+    \textcolor{blue}{#1}
+}
+
+
+
+\begin{document}
+    \hspace{0.87\textwidth}
+    \begin{minipage}{120pt}
+        \vspace{-1.8cm}
+        \includegraphics[width=80pt]{../logo.pdf}
+        \centering
+        \small Zusammenkunft aller Physik-Fachschaften
+    \end{minipage}
+    \begin{center}
+        \huge{Resolution der Zusammenkunft aller  Physik-Fachschaften}\vspace{.25\baselineskip}\\
+        \normalsize
+    \end{center}
+    \vspace{1cm}
+
+\section*{Zum BAföG}
+
+
+Die Zusammenkunft aller deutschsprachigen Physik-Fachschaften (ZaPF) begrüßt die durch
+Bundesbildungsministerin Anja Karliczek angestrebte Erhöhung des BAföG für 2019, jedoch geht
+diese Anpassungen aus der Sicht der ZaPF nicht weit genug. Um allen Studierenden die
+Finanzierung ihres Studiums zu ermöglichen, sprechen wir uns daher für eine Novellierung des
+BAföGs aus. Dabei sollte, neben realistischen Bezügen und Freibeträgen, die generelle
+Elternunabhängigkeit beschlossen werden. Auch eine Verminderung des bürokratischen Aufwandes
+sollte als Teil dieser Umgestaltung angestrebt werden.
+\vspace{0.5\baselineskip}\\
+Die momentane Situation der Elternabhängigkeit reduziert die Berechnung alleine auf das
+Einkommen der Eltern. Individuelle familiäre Faktoren und Probleme werden dabei nicht
+berücksichtigt und blockieren dadurch die benötigte Unterstützung durch das BAföG. Das kann
+dazu führen, dass Studierende diese Förderung nicht erhalten. Daher spricht sich die ZaPF für ein
+generelles elternunabhängiges BAföG
+und die jährliche dynamische Anpassung an die sich verändernden
+Lebenshaltungskosten aus. 
+\vspace{0.5\baselineskip}\\
+Im bisherigen BAföG-System entsteht durch die Bürokratie für Studierende und Behörden viel
+Aufwand. Eine Vereinfachung dieser, wie es auch das elternunabhängige BAföG erzielen würde,
+kann zu einer erheblichen Entlastung der Verwaltung, von Sacharbeiter*Innen und Studierenden
+führen. Insbesondere würde dies den Bearbeitungsprozess der Anträge beschleunigen und
+Planungssicherheit für Studierende erhöht.
+\vspace{0.5\baselineskip}\\
+Für eine moderne Bildungsgesellschaft ist der zuverlässige Zugang zu Hochschulbildung
+unerlässlich. Die finanzielle Sicherung durch das BAföG würde hierzu einen wichtigen Beitrag
+leisten.
+\vfill
+    \begin{flushright}
+        Verabschiedet am 25.11.2018 in Würzburg
+    \end{flushright}
+\end{document}
+

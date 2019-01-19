@@ -1,0 +1,106 @@
+\documentclass[DIV=calc]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[draft, markup=underlined]{changes}
+\usepackage{csquotes}
+
+\usepackage{ulem}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{paralist}
+\usepackage{fixltx2e}
+%\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+
+\usepackage{lmodern}                        % Ersatz fuer Computer Modern-Schriften
+%\usepackage{hfoldsty}
+
+%\usepackage{fourier}             % Schriftart
+\usepackage[scaled=0.81]{helvet}     % Schriftart
+
+\usepackage{url}
+\usepackage{tocloft}             % Paket für Table of Contents
+
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,    
+    linkcolor=black,    % Farbe der internen Links (u.a. Table of Contents)
+    urlcolor=black,    % Farbe der url-links
+    citecolor=black} % Farbe der Literaturverzeichnis-Links
+
+\usepackage{mdwlist}     % Änderung der Zeilenabstände bei itemize und enumerate
+\usepackage{draftwatermark} % Wasserzeichen ``Entwurf'' 
+\SetWatermarkText{}
+
+\parindent 0pt                 % Absatzeinrücken verhindern
+\parskip 12pt                 % Absätze durch Lücke trennen
+
+\setlength{\textheight}{23cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{www.zapfev.de\\stapf@zapf.in}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+\newcommand{\gen}{*innen}
+\addto{\captionsngerman}{\renewcommand{\refname}{Quellen}}
+
+%%%% Mit-TeXen Kommandoset
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+
+\newcommand{\replace}[2]{
+    \sout{\textcolor{blue}{#1}}~\textcolor{blue}{#2}
+}
+
+\newcommand{\delete}[1]{
+    \sout{\textcolor{red}{#1}}
+}
+
+\newcommand{\add}[1]{
+    \textcolor{green}{#1}
+}
+
+
+
+\begin{document}
+    \hspace{0.87\textwidth}
+    \begin{minipage}{120pt}
+        \vspace{-1.8cm}
+        \includegraphics[width=80pt]{../logo.pdf}
+        \centering
+        \small Zusammenkunft aller Physik-Fachschaften
+    \end{minipage}
+    \begin{center}
+        \huge{Resolution der Zusammenkunft aller Physik-Fachschaften}\vspace{.25\baselineskip}\\
+        \normalsize
+    \end{center}
+    \vspace{1cm}
+
+\section*{Gegen außeruniversitäre Werbung in Lern- und Lehrräumen}
+Die Zusammenkunft aller Physik Fachschaften (ZaPF) fordert die Unterlassung von Raumbranding\footnote{Hörsaal- und Raumbranding bedeutet in diesem Fall den Verkauf von Namensrechten von
+Hörsälen und anderen Lehr- und Lernräumen. In konkreten Fällen kann dies das Anbringen von
+Firmenlogos am und im betroffenen Raum und an der Rauminfrastruktur, sowie die Eintragung des
+Namens ins Raumverwaltungssystem der Hochschule bedeuten.} und außeruniversitärer Werbung\footnote{Unter universitärer Werbung wird Werbung für direkt studien- und universitätsrelevante
+Veranstaltungen und Ähnliches von nicht kommerziellen Einrichtungen verstanden,
+außeruniversitäre Werbung ist Werbung, die nicht unter diese Einschränkung fällt.} in allen Lern- und Lehrräumen (z.B. Bibliotheken, Hörsäle,
+Übungsräume, Praktikumsräume) bei Lehrbetrieb.
+Sinn der Lehrveranstaltungen und des Lernbetriebs ist es, dass Studierende, unbeeinflusst von
+Interessen Dritter, Fachinhalte erlernen und diskutieren, sowie Lehrende Lehrinhalte frei vermitteln
+können. Raumbranding steht zu diesem Prozess im Widerspruch.
+Auch ist Raumbranding insbesondere deshalb abzulehnen, da es eine sehr einseitige Form der
+Werbung darstellt, der sich die Teilnehmenden von Lehrveranstaltungen nicht entziehen können.\\
+Wir sehen die Entscheidung solcher Fragen als Grundsatzfrage an und fordern daher den offenen
+und transparenten Diskurs in den legitimierten Vertretungen aller Statusgruppen der Universität.\vspace{2\baselineskip}\\~
+\vfill
+    \begin{flushright}
+        Verabschiedet am 25.11.2018 in Würzburg
+    \end{flushright}
+\end{document}
+

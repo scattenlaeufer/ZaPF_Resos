@@ -1,0 +1,92 @@
+\documentclass[DIV=calc]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[draft, markup=underlined]{changes}
+\usepackage{csquotes}
+
+\usepackage{ulem}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{paralist}
+\usepackage{fixltx2e}
+%\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+
+\usepackage{lmodern}              % Ersatz fuer Computer Modern-Schriften
+%\usepackage{hfoldsty}
+
+%\usepackage{fourier}             % Schriftart
+\usepackage[scaled=0.81]{helvet}     % Schriftart
+
+\usepackage{url}
+\usepackage{tocloft}             % Paket für Table of Contents
+
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,    
+    linkcolor=black,    % Farbe der internen Links (u.a. Table of Contents)
+    urlcolor=black,    % Farbe der url-links
+    citecolor=black} % Farbe der Literaturverzeichnis-Links
+
+\usepackage{mdwlist}     % Änderung der Zeilenabstände bei itemize und enumerate
+\usepackage{draftwatermark} % Wasserzeichen ``Entwurf'' 
+\SetWatermarkText{}
+
+\parindent 0pt                 % Absatzeinrücken verhindern
+\parskip 12pt                 % Absätze durch Lücke trennen
+
+\setlength{\textheight}{23cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{www.zapfev.de\\stapf@zapf.in}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+\newcommand{\gen}{*innen}
+\addto{\captionsngerman}{\renewcommand{\refname}{Quellen}}
+
+%%%% Mit-TeXen Kommandoset
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+
+\newcommand{\replace}[2]{
+    \sout{\textcolor{blue}{#1}}~\textcolor{blue}{#2}}
+\newcommand{\delete}[1]{
+    \sout{\textcolor{red}{#1}}}
+\newcommand{\add}[1]{
+    \textcolor{blue}{#1}}
+
+
+\begin{document}
+    \hspace{0.87\textwidth}
+    \begin{minipage}{120pt}
+        \vspace{-1.8cm}
+        \includegraphics[width=80pt]{../logo.pdf}
+        \centering
+        \small Zusammenkunft aller Physik-Fachschaften
+    \end{minipage}
+    \begin{center}
+        \huge{Positionspapier der Zusammenkunft aller Physik-Fachschaften}\vspace{.25\baselineskip}\\
+        \normalsize
+    \end{center}
+    \vspace{1cm}
+
+
+\section*{Zu studentischen begutachtenden Personen in Akkreditierungsverfahren}
+In den vergangen Jahren hat sich der studentische Akkreditierungspool als Instanz zur Schulung von studentischen begutachtenden Personen in allen Bereichen rund um den Themenkomplex der Akkreditierung von Studiengängen, sowie als Kontaktquelle zu den studentischen begutachtenden Personen etabliert. Die ZaPF als Vertretung der Physikstudierenden wertschätzt und unterstützt die Arbeit des Pools und die dadurch gegebene Qualitätssicherung.
+
+Deshalb fordern wir, bei der Suche nach studentischen begutachtenden Personen auf den studentischen Akkreditierungspool zurückzugreifen und dessen Vorschlägen zu folgen. Eine Aquirierung von studentischen begutachtenden Personen auf anderen Wegen lehnen wir ab. Dies gilt sowohl für Programm- als auch für Systemakkreditierungsverfahren und interne Verfahren an systemakkreditierten Hochschulen.
+
+Des Weiteren rufen wir Fachschaften, die direkte Anfragen nach studentischen begutachtenden Personen von Akkreditierungsagenturen erhalten, dazu auf, diese Agenturen an den studentischen Akkreditierungspool weiterzuverweisen.
+\vfill
+    \begin{flushright}
+        Verabschiedet am 25.11.2018 in Würzburg
+    \end{flushright}
+\end{document}
+

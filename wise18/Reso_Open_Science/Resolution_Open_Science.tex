@@ -1,0 +1,97 @@
+\documentclass[DIV=calc]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[draft, markup=underlined]{changes}
+\usepackage{csquotes}
+
+\usepackage{ulem}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{paralist}
+\usepackage{fixltx2e}
+%\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+
+\usepackage{lmodern}                        % Ersatz fuer Computer Modern-Schriften
+%\usepackage{hfoldsty}
+
+%\usepackage{fourier}             % Schriftart
+\usepackage[scaled=0.81]{helvet}     % Schriftart
+
+\usepackage{url}
+\usepackage{tocloft}             % Paket für Table of Contents
+
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,    
+    linkcolor=black,    % Farbe der internen Links (u.a. Table of Contents)
+    urlcolor=black,    % Farbe der url-links
+    citecolor=black} % Farbe der Literaturverzeichnis-Links
+
+\usepackage{mdwlist}     % Änderung der Zeilenabstände bei itemize und enumerate
+\usepackage{draftwatermark} % Wasserzeichen ``Entwurf'' 
+\SetWatermarkText{}
+
+\parindent 0pt                 % Absatzeinrücken verhindern
+\parskip 12pt                 % Absätze durch Lücke trennen
+
+\setlength{\textheight}{23cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{www.zapfev.de\\stapf@zapf.in}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+\newcommand{\gen}{*innen}
+\addto{\captionsngerman}{\renewcommand{\refname}{Quellen}}
+
+%%%% Mit-TeXen Kommandoset
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+
+\newcommand{\replace}[2]{
+    \sout{#1}~\textcolor{blue}{#2}
+}
+
+\newcommand{\delete}[1]{
+    \sout{\textcolor{red}{#1}}
+}
+
+\newcommand{\add}[1]{
+    \textcolor{green}{#1}
+}
+
+
+
+\begin{document}
+    \hspace{0.87\textwidth}
+    \begin{minipage}{120pt}
+        \vspace{-1.8cm}
+        \includegraphics[width=80pt]{../logo.pdf}
+        \centering
+        \small Zusammenkunft aller Physik-Fachschaften
+    \end{minipage}
+    \begin{center}
+        \huge{Resolution der Zusammenkunft aller Physik Fachschaften}\vspace{.25\baselineskip}\\
+        \normalsize
+    \end{center}
+    \vspace{1cm}
+
+\section*{Zu Open Science}
+
+Die Entwicklung der letzten Jahre hat gezeigt, dass frei zugängliche Wissenschaft für die Durchführung der Forschung, wie auch für die Verbreitung der Ergebnisse,  essentiell ist.
+
+Die ZaPF spricht sich für den Grundsatz von Open Science in seinen verschiedenen Facetten aus.  Insbesondere fordert die ZaPF, wissenschaftliche Arbeiten, vor allem die aus öffentlicher Hand finanzierten, unter Open Access zu veröffentlichen sowie erhobene Daten und entwickelten Quellcode im Sinne von Open Data beziehungsweise Open Source frei verfügbar zu machen.
+
+Darüber hinaus betrachtet die ZaPF die aktuellen Bemühungen zum Aufbau der European Open Science Cloud (EOSC)\footnote{\url{https://www.eosc-portal.eu/}} als richtungsweisend für die Realisierung von Open Science auf europäischer Ebene.
+Besonders die Entwicklungen der Hochenergiephysik, wie etwa das SCOAP3-Programm\footnote{\url{http://scoap3.org/}}, sind beispielhaft für die praktische Umsetzung im Forschungsalltag. Fachbereichsübergreifend ist die Förderung von Open Access Projekten aktiv voranzutreiben und deren Bedeutung hervorzuheben.
+
+Außerdem fordert die ZaPF Unterzeichnung der Declaration on Research Assessment (DORA)\footnote{\url{https://sfdora.org/read/de/}}, die Empfehlungen in Bezug auf die Bewertung von wissentschaftlichen Arbeiten im Sinne von Open Science Evaluation ausspricht.\\
+\vfill\hfill Verabschiedet am 25. November in Würzburg\\
+\end{document}
