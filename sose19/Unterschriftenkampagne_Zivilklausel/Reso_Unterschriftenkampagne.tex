@@ -1,0 +1,115 @@
+\documentclass[DIV=calc]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[draft, markup=underlined]{changes}
+\usepackage{csquotes}
+
+\usepackage{ulem}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{paralist}
+\usepackage{fixltx2e}
+%\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+
+\usepackage{lmodern}                        % Ersatz fuer Computer Modern-Schriften
+%\usepackage{hfoldsty}
+
+%\usepackage{fourier}             % Schriftart
+\usepackage[scaled=0.81]{helvet}     % Schriftart
+
+\usepackage{url}
+\usepackage{tocloft}             % Paket für Table of Contents
+
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,    
+    linkcolor=black,    % Farbe der internen Links (u.a. Table of Contents)
+    urlcolor=black,    % Farbe der url-links
+    citecolor=black} % Farbe der Literaturverzeichnis-Links
+
+\usepackage{mdwlist}     % Änderung der Zeilenabstände bei itemize und enumerate
+\usepackage{draftwatermark} % Wasserzeichen ``Entwurf'' 
+\SetWatermarkText{}
+
+\parindent 0pt                 % Absatzeinrücken verhindern
+\parskip 12pt                 % Absätze durch Lücke trennen
+
+\setlength{\textheight}{23cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{www.zapfev.de\\stapf@zapf.in}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+\newcommand{\gen}{*innen}
+\addto{\captionsngerman}{\renewcommand{\refname}{Quellen}}
+
+%%%% Mit-TeXen Kommandoset
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+
+\newcommand{\replace}[2]{
+    \sout{\textcolor{blue}{#1}}~\textcolor{blue}{#2}
+}
+
+\newcommand{\delete}[1]{
+    \sout{\textcolor{red}{#1}}
+}
+
+\newcommand{\add}[1]{
+    \textcolor{green}{#1}
+}
+
+
+
+\begin{document}
+    \hspace{0.87\textwidth}
+    \begin{minipage}{120pt}
+        \vspace{-1.8cm}
+        \includegraphics[width=80pt]{logo.png}
+        \centering
+        \small Zusammenkunft aller Physik-Fachschaften
+    \end{minipage}
+    \begin{center}
+        \huge{Resolution der Zusammenkunft aller Physik-Fachschaften}\vspace{.25\baselineskip}\\
+        \normalsize
+    \end{center}
+    \vspace{1cm}
+
+\section*{Unterschriftenkampagne „Wissenschaft für Nachhaltigkeit, Frieden und Demokratie – Die Zivilklausel in NRW erhalten!}
+Im Rahmen der laufenden Hochschulgesetz-Novellierungen in mehreren Bundesländern hält die ZaPF die Auseinandersetzung um Zivilklauseln für besonders relevant: Es ist nicht optional, sondern notwendig, dass die Hochschulen einen Beitrag zu einer gerechten, nachhaltigen, friedlichen und demokratischen Welt leisten. Insbesondere ist eine Verankerung dieser Aufgaben in den Hochschulgesetzen dafür unabdingbar. Nur so ist sicher gestellt, dass die Landesregierungen verbindlich die Verantwortung dafür übernehmen, den Hochschulen die nötigen Rahmenbedingungen zur Verfügung zu stellen. Nur so haben sie die notwendigen Voraussetzungen, um zu Aufklärung über Falschdarstellungen, Kriegsursachen und -profiteure, etc. beizutragen, sowie an – nicht ergriffenen und noch zu entwickelnden – zivilen Möglichkeiten zu forschen.
+
+Deshalb unterstützt die ZaPF die Unterschriftenkampagne „Wissenschaft für Nachhaltigkeit, Frieden und Demokratie – Die Zivilklausel in NRW erhalten!“. Das Bündnis zwischen Hochschulaktiven sowie der Umwelt-, Friedens- und Gewerkschaftsbewegung, das in dieser Unterschriftenkampagne zum Ausdruck kommt, ist über NRW hinaus richtunggebend. Darum setzen wir darauf, diese Kampagne und die zugehörige Broschüre auch jenseits von NRW zu verbreiten (sie kann von allen unterschrieben werden.)
+
+Wir möchten euch dringend bitten, ebenfalls diese Kampagne zu unterstützen und zu ihrer Verbreitung beizutragen:
+
+\textbf{www.zivilklausel.de/nrw}
+
+Für kostenloses Material und weitere Infos:
+stapf@zapf.in
+
+\vfill
+    \begin{flushright}
+        Verabschiedet am 11.06.2019 in Bonn
+    \end{flushright}
+\end{document}
+
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
