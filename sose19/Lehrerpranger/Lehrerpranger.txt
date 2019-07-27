@@ -1,0 +1,103 @@
+﻿\documentclass[DIV=calc]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\graphicspath{{/home/luise/Dokumente/StAPF/}}
+\usepackage[draft, markup=underlined]{changes}
+\usepackage{csquotes}
+\usepackage{ulem}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{paralist}
+\usepackage{fixltx2e}
+%\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+\usepackage{lmodern}                        % Ersatz fuer Computer Modern-Schriften
+%\usepackage{hfoldsty}
+%\usepackage{fourier}             % Schriftart
+\usepackage[scaled=0.81]{helvet}     % Schriftart
+\usepackage{url}
+\usepackage{tocloft}           % Paket für Table of Contents
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,    
+    linkcolor=black,    % Farbe der internen Links (u.a. Table of Contents)
+    urlcolor=black,    % Farbe der url-links
+    citecolor=black} % Farbe der Literaturverzeichnis-Links
+\usepackage{mdwlist} %Änderung Zeilenabstände itemize & enumerate
+%\usepackage{draftwatermark} %Wasserzeichen ``Entwurf'' 
+%\SetWatermarkText{Entwurf}
+
+\parindent 0pt                 % Absatzeinrücken verhindern
+\parskip 12pt                 % Absätze durch Lücke trennen
+\setlength{\textheight}{23cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{www.zapfev.de\\stapf@zapf.in}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+\newcommand{\gen}{*innen}
+\addto{\captionsngerman}{\renewcommand{\refname}{Quellen}}
+
+
+
+%%%% Mit-TeXen Kommandoset
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+\newcommand{\replace}[2]{
+    \sout{\textcolor{blue}{#1}}~\textcolor{blue}{#2}
+}
+
+\newcommand{\del}[1]{
+    \sout{#1}
+}
+\newcommand{\add}[1]{
+    \textcolor{blue}{#1}
+}
+\newcommand{\okay}[1]{
+    \textcolor{green}{#1}
+}
+
+
+\begin{document}
+\hspace{0.87\textwidth}
+\begin{minipage}{120pt}
+\vspace{-1.8cm}
+\includegraphics[width=80pt]{logo.pdf}
+\centering
+\small Zusammenkunft aller Physik-Fachschaften
+\end{minipage}
+
+\begin{center}
+\huge{Resolution der Zusammenkunft aller Physik-Fachschaften}\vspace{.25\baselineskip}\\
+\normalsize
+\end{center}
+\vspace{0.7cm}
+
+
+\section*{Zur Verurteilung von Onlineplattformen zur Denunziation von Lehrenden}
+Die Freiheit von Forschung und Lehre ist der zentrale Grundpfeiler wissenschaftlicher Arbeit. Dazu gehört, frei von Angst und Repressionen die eigene Lehre zu gestalten. Die Partei \glqq Alternative für Deutschland\grqq\ (AfD) hat diese Freiheit in der jüngeren Vergangenheit in mehreren Bundesländern (z.B. Baden-Württemberg, Berlin, Brandenburg, Hamburg, Rheinland-Pfalz und Sachsen) unter dem Deckmantel des Neutralitätsgebots angegriffen und Denunziationsplattformen für Lehrende eingerichtet, die sich der AfD gegenüber kritisch äußern.
+Dies erzeugt ein Milieu der Angst, dem wir uns entgegenstellen müssen.\\
+Die Schule stellt einen in besonderem Maße schützenswerten Raum dar, in dem die Werte der freiheitlich-demokratischen Grundordnung aktiv vorgelebt werden müssen. Die Mär von der Absolutheit des Neutralitätsgebots an Schulen steht dabei in fundamentalem Widerspruch zum Beutelsbacher Konsens\footnote{https://www.bpb.de/die-bpb/51310/beutelsbacher-konsens}. Durch diese Praktiken wird die Freiheit der Lehre im Allgemeinen und die Schule im speziellen in einem nicht hinnehmbarem Maße angegriffen.\\
+Aus diesen Gründen verurteilt die ZaPF die Einrichtungen solcher Denunziationsplattformen aufs Schärfste und ruft alle Lehrenden zum Protest gegen diese Praktiken auf.\\
+Mögliche Protestformen umfassen:
+\begin{itemize}
+\item Kollektive Selbstanzeigen wie beispielsweise an der Lina-Morgenstern-Schule in Berlin-Kreuzberg
+\item Nutzung der Auskunftsrechte nach Artikel 15 der Datenschutzgrundverordnung (DSGVO) sowie Geltentmachung des Rechts auf Löschung nach Artikel 1
+\item Beschwerde beim Landesdatenschutzbeauftragten
+\end{itemize}
+
+    
+
+\vspace*{\fill}
+\begin{flushright}
+Verabschiedet am 10.06.2019 in Bonn
+\end{flushright}
+
+\end{document}
