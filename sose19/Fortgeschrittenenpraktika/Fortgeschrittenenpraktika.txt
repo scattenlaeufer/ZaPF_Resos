@@ -1,0 +1,114 @@
+﻿\documentclass[DIV=calc]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[draft, markup=underlined]{changes}
+\usepackage{csquotes}
+
+\usepackage{ulem}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{paralist}
+\usepackage{fixltx2e}
+%\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+
+\usepackage{lmodern}                        % Ersatz fuer Computer Modern-Schriften
+%\usepackage{hfoldsty}
+
+%\usepackage{fourier}             % Schriftart
+\usepackage[scaled=0.81]{helvet}     % Schriftart
+
+\usepackage{url}
+\usepackage{tocloft}             % Paket für Table of Contents
+
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,    
+    linkcolor=black,    % Farbe der internen Links (u.a. Table of Contents)
+    urlcolor=black,    % Farbe der url-links
+    citecolor=black} % Farbe der Literaturverzeichnis-Links
+
+\usepackage{mdwlist}     % Änderung der Zeilenabstände bei itemize und enumerate
+\usepackage{draftwatermark} % Wasserzeichen ``Entwurf'' 
+\SetWatermarkText{}
+
+\parindent 0pt                 % Absatzeinrücken verhindern
+\parskip 12pt                 % Absätze durch Lücke trennen
+
+\setlength{\textheight}{23cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{www.zapfev.de\\stapf@zapf.in}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+\newcommand{\gen}{*innen}
+\addto{\captionsngerman}{\renewcommand{\refname}{Quellen}}
+
+%%%% Mit-TeXen Kommandoset
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+
+\newcommand{\replace}[2]{
+    \sout{\textcolor{blue}{#1}}~\textcolor{blue}{#2}
+}
+
+\newcommand{\delete}[1]{
+    \sout{\textcolor{red}{#1}}
+}
+
+\newcommand{\add}[1]{
+    \textcolor{blue}{#1}
+}
+
+
+
+\begin{document}
+    \hspace{0.87\textwidth}
+    \begin{minipage}{120pt}
+        \vspace{-1.8cm}
+        \includegraphics[width=80pt]{logo.pdf}
+        \centering
+        \small Zusammenkunft aller Physik-Fachschaften
+    \end{minipage}
+    \begin{center}
+        \huge{Positionspapier der Zusammenkunft aller Physik-Fachschaften}\vspace{.25\baselineskip}\\
+        \normalsize
+    \end{center}
+    \vspace{0.1cm}
+
+\section*{Zu Lernzielen und Rahmenbedingungen für physikalische Fortgeschrittenenpraktika}
+
+
+Die Zusammenkunft aller Physikfachschaften im deutschsprachigen Raum spricht sich für die Vermittlung der unten aufgeführten Qualifikationsziele und Rahmenbedingungen für Fortgeschrittenenpraktika der Physik aus.
+
+\textbf{Zielsetzungen der Fortgeschrittenenpraktika}
+
+Praktika sind eine zentrale Lehrveranstaltungsform in naturwissenschaftlichen Fächern. Das Ziel der Fortgeschrittenenpraktika ist die Vermittlung von spezifischen inhaltlichen sowie formellen Qualifikationszielen und Schlüsselqualifikationen. Diese Qualifikationsziele sind zentrale Fähigkeiten von Absolvent*innen der Physik und sollen dabei im Fortgeschrittenenpraktikum erlernt und ausgebaut werden. Nach  Fortgeschrittenenpraktika in der Physik sollen die unten aufgeführten Qualifikationsziele vermittelt worden sein. Die Gestaltung und Vermittlung dieser Qualifikationsziele obliegt dabei der Hochschule.
+
+\textbf{Qualifikationsziele und Rahmenbedingungen für Fortgeschrittenenpraktika in der Physik}
+
+Um aufbauend auf die Grundpraktika selbstständiges wissenschaftliches Arbeiten zu vertiefen, sollen Studierende im Fortgeschrittenenpraktikum lernen, die Durchführung von umfangreicheren Experimenten mit gegebener Aufgabenstellung eigenständig zu planen, die sie auch auf die aktuelle Laborpraxis vorbereiten. Bei der Durchführung soll der richtige Umgang mit den technischen Geräten und das korrekte wissenschaftliche Arbeiten gefestigt werden.\\[-0.25cm]
+
+Das Fortgeschrittenenpraktikum ist auch zusätzlich als Blockpraktikum anzubieten, sofern dabei eine Qualitätsminderung ausgeschlossen ist. Im Bezug auf die Versuchs- und Terminwahl soll die größtmögliche Freiheit gewährleistet werden. Zum einen soll den Studierenden aus dem Versuchsangebot eine Wahl möglich sein. Zum anderen soll von Seiten der Betreuenden eine Auswahl von Versuchsterminen gegeben sein. Insbesondere soll die Wahl von Versuchen aus der theoretischen Physik möglich sein, um auf die Arbeit in diesem Bereich vorzubereiten.\\[-0.25cm]
+
+Für die Nachvollziehbarkeit eines Versuches sollen alle relevanten Informationen inklusive Messwerte in geeigneter Form, zum Beispiel in einem Messprotokoll oder Laborbuch, festgehalten werden.Hierbei soll auf ein nachhaltiges Forschungsdatenmanagement geachtet werden.\\[-0.25cm]
+
+Zur Auswertung dieser Daten sollten sich vertiefte Statistik- und Plotkenntnisse angeeignet werden, wobei das Verständnis der verwendeten Methodik vorausgesetzt wird. Nach der abgeschlossenen Auswertung sollen die Interpretation und Diskussion der Ergebnisse vermittelt werden, besonders im Hinblick auf Unsicherheiten und unter Berücksichtigung des physikalischen Kontextes. Außerdem sollen die Studierenden lernen, ihre im Fortgeschrittenenpraktikum gewonnenen Ergebnisse schlüssig, bündig und übersichtlich auszuarbeiten und schriftlich darzustellen. Dabei stellen die Abschätzung, Diskussion und der Einfluss von Fehlern auf die Ergebnisse einen zentralen Teil der eigentlichen Resultate dar. Diese sollen, ebenso wie die für den Versuch nötigen physikalischen Grundlagen, unbedingt in Vor- und Nachbesprechungen diskutiert werden. Bei der Vorbesprechung ist sicherzustellen, dass das Experiment ohne Schäden durchgeführt werden kann, als auch, dass die Studierenden die nötigen Inhalte verstanden haben. Im Rahmen der Nachbesprechung sollen aufgetretene Fehler besprochen und der Versuch reflektiert werden.\\[-0.25cm]
+
+Beim Verfassen des Protokolls ist auf eine sorgfältige Formulierung und die korrekte äußere Form zu achten. Aufgrund der allgemeinen wissenschaftlichen Relevanz wird dabei dringlichst empfohlen, dass die Studierenden ein geeignetes Textsatzsystem (z.B. LaTeX) nutzen. Während der Erstellung des Protokolls soll auf einen sensiblen Umgang mit Quellen inklusive deren korrektes Zitieren geachtet werden. Bei der Bewertung des Protokolls sollte auf Plagiate geachtet und eine Plagiatsprüfung durchgeführt werden. Falls hierfür eine Software genutzt wird, ist ein menschliches Lektorat weiterhin zwingend erforderlich.\\[-0.25cm]
+
+Ebenfalls ein zentraler Bestandteil der Fortgeschrittenenpraktika ist der Transfer von theoretischem Wissen in die Praxis, sodass die Arbeit an Experimenten zu einem besseren Verständnis der zugrunde liegenden Sachverhalte und deren Vertiefung führt. So soll insbesondere der physikalische Erkenntnisgewinn am selbst durchgeführten Experiment erfahren werden, gerade auch zum Erlernen und Vertiefen eines Gespürs für physikalische Zusammenhänge. Außerdem sollen Absolvent*innen der Physik in der Lage sein, sowohl im Team als auch eigenständig organisiert zu arbeiten.\\[-0.25cm]
+
+Bei Erfüllung der oben genannten Lernziele und Rahmenbedingungen im Fortgeschrittenenpraktikum ist ein Grundstein für gutes wissenschaftliches Arbeiten gelegt.\\[-0.7cm]
+    \begin{flushright}
+        Verabschiedet am 10.06.2019 in Bonn
+    \end{flushright}
+\end{document}
+
