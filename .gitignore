@@ -35,3 +35,7 @@
 
 auto/
 **/Thumbs.db
+
+# ignore macOS preferences files
+.DS_STORE
+*/.DS_STORE

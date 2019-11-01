@@ -1,0 +1,52 @@
+==== Resolution zu den Akkreditierungsrichtlinien der ZaPF ====
+
+Im Rahmen der Veränderungen des Akkreditierungssystems durch die Einführung des Studienakkreditierungsstaatsvertrags und der dazugehörigen Musterrechtsverordnung zum 1.1.2018 verabschiedet die ZaPF überarbeitete Akkreditierungsrichtlinien. Die aktuellen Richtlinien ersetzen die Richtlinen aus dem WiSe 2008 und vorangegangene Versionen. Sie enthalten die Kriterien, von denen die ZaPF wünscht, dass sie über die Kriterien der gesetzlichen Grundlagen hinaus bei einer (Re-) Akkreditierung von der Gutachtergruppe überprüft werden.
+
+''' Studiengangskonzeption: '''
+
+* Deckt der Studiengang alle relevanten Inhalte der Physik ab? &rarr; Vergleiche Empfehlungen der ZaPF zur Ausgestaltung der Bachelor- und Master-Studiengänge im Fach Physik SoSe 2010.
+* Sind die Übungskonzepte sinnvoll? &rarr; Vergleiche Resolution zu Übungskonzepten im Physikstudium WiSe 2010.
+* Ist die Gestaltung der Praktika sinnvoll? &rarr; Vergleiche Positionspapier zur Ausgestaltung von Grund-/Anfängerpraktika und das Protokoll zum Arbeitskreis zu Fortgeschrittenen Praktika.
+* Findet Ethik im Studium angemessene Berücksichtigung? &rarr; Vergleiche Positionspapier der ZaPF zu Ethikinhalten im Physikstudium.
+* Gibt es ausreichend frei wählbare Studieninhalte wie z.B. Wahlpflichtfächer, Nebenfächer und freie Vertiefungsfächer? Vergleiche Empfehlungen der ZaPF zur Ausgestaltung der Bachelor- und Master-Studiengänge im Fach Physik SoSe 2010.
+* Findet Wissenschaftskommunikation ausreichend Beachtung im Curriculum? &rarr; Vergleiche Positionspapier der ZaPF zur Förderung der Wissenschaftskommunikation WiSe 2017<sup>,</sup>.
+
+''' Bachelorstudiengang: '''
+
+* Ist ein freier Zugang ohne Beschränkungen über das Abitur und dessen Äquivalente hinaus möglich? &rarr; Vergleiche Positionspapier zu Zugangs- und Zulassungsbeschränkungen.
+* Existiert die Möglichkeit Wissen über grundlegende Programmierkenntnisse und numerische Methoden zu erlangen? &rarr; Vergleiche Positionspapier zur Programmierfähigkeiten im Physikstudium
+* Werden Datenauswertung, -darstellung und -präsentation sowie grundlegende Kenntnisse der Datenanalyse vermittelt?
+* Wird ein Bewusstsein für konkurrierende Theorien geschaffen, um scheinbarer Alternativlosigkeit vorzubeugen?
+* Wird durch Schaffung und Förderung von soft skills eine Berufsbefähigung gewährleistet?
+
+''' Masterstudiengang: '''
+
+* Werden Stärken und Schwächen der vermittelten Theorien ausreichend beleuchtet?
+* Ist eine Spezialisierung in angemessener Tiefe außerhalb der Thesis möglich?
+
+''' Modularisierung: '''
+
+* Gibt es inhaltliche Begründungen für Abweichungen von den Soll-Regelungen der MRVO zu Modulgröße und kummulativen Modulabschlussprüfungen? &rarr; Hierbei sind physikspezifische Eigenheiten wie etwa Wahlbereiche mit vielen kleinen Modulen oder Experimentalpraktika zu berücksichtigen.
+* Werden Auslandsaufenthalte ausreichend unterstützt? &rarr; Vergleiche Resolution zur Mobilität/Uniwechsel SoSe 2018.
+* Gibt es ein vernünftiges und faires Konzept zur Anrechnung bisheriger Studien- und Prüfungsleistungen?
+* Wird der durch die ECTS-Punkte vorgegebene Workload regelmäßig durch geeignete Erhebungen überprüft? Werden dabei festgestellte Abweichungen korrigiert (z.B. durch Umverteilung der ECTS-Punkte oder Änderungen im Umfang der Veranstaltungen)?
+* Ist die Prüfungsbelastung angemessen?
+* Dürfen Prüfungen bei Nichtbestehen zeitnah wiederholt werden? Gibt es Regelungen zur Notenverbesserung (z.B. Freischussregelungen, Prüfungswiederholung auch von bestanden Prüfungen, etc.)?
+* Ist eine flexible An- und Abmeldung von Prüfungen möglich? &rarr; Vergleiche Resolution zur flexiblen Prüfungsan-/abmeldung.
+* Gibt es begründete Abweichungen von einer Berechnung der Gesamtnote aus den Noten der mit ihren ECTS-Punkten gewichteten Modulen? Z. B. eine geringere Gewichtung der Module im ersten/zweiten Semester (Übergang Schule/Studium, unterschiedliches Niveau der Anfänger) oder eine stärkere Gewichtung der Abschlussarbeit.
+
+''' Qualitätssicherung: '''
+
+* Gibt es wirksame Instrumente zur Qualitätssicherung des Studiengangs, die insbesondere auch Mechanismen, um auf auftretende Probleme und Missstände zu reagieren, beinhalten?
+* Existiert ein merklicher Wille und Veranlassung aus Evaluationsergebnissen gegebenenfalls Maßnahmen abzuleiten?
+* Findet die Qualitätssicherung mit den Hochschulgremien statt (nicht an ihnen vorbei)?
+* Sind Prüfungs- und Studienordnungen transparent und eindeutig? Vergleiche Empfehlungen der ZaPF zur Ausgestaltung der Bachelor- und Master-Studiengänge im Fach Physik SoSe 2010.
+* Werden und wurden Vorlesungen maßgeblich von den verantwortlichen Lehrenden gehalten?
+* Werden Studierende ausreichend in den Akkreditierungsprozess miteinbezogen (z. B. in die Begehung oder die Erstellung des Selbstberichtes bzw. einer Stellungnahme)? Sind die involvierten Studierenden vom Lehrkörper ausreichend unabhängig?
+* Werden die Studierenden der betreffenden Studiengänge ausreichend und rechtzeitig über den Status und ihre möglichen Teilnahmemöglichkeiten des Akkreditierungsprozesses informiert?
+
+
+
+Zu den [[:Medium:Akkreditierungsrichtlinien.pdf|Akkreditierungsrichtlinien der ZaPF]]
+
+''' Verweise: '''
