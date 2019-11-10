@@ -1,0 +1,110 @@
+\documentclass[DIV=calc]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[draft, markup=underlined]{changes}
+\usepackage{csquotes}
+
+\usepackage{ulem}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{paralist}
+\usepackage{fixltx2e}
+%\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+
+\usepackage{lmodern}              % Ersatz fuer Computer Modern-Schriften
+%\usepackage{hfoldsty}
+
+%\usepackage{fourier}             % Schriftart
+\usepackage[scaled=0.81]{helvet}     % Schriftart
+
+\usepackage{url}
+\usepackage{tocloft}             % Paket für Table of Contents
+
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,    
+    linkcolor=black,    % Farbe der internen Links (u.a. Table of Contents)
+    urlcolor=black,    % Farbe der url-links
+    citecolor=black} % Farbe der Literaturverzeichnis-Links
+
+\usepackage{mdwlist}     % Änderung der Zeilenabstände bei itemize und enumerate
+\usepackage{draftwatermark} % Wasserzeichen ``Entwurf'' 
+\SetWatermarkText{}
+
+\parindent 0pt                 % Absatzeinrücken verhindern
+\parskip 12pt                 % Absätze durch Lücke trennen
+
+\setlength{\textheight}{23cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{www.zapfev.de\\stapf@zapf.in}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+\newcommand{\gen}{*innen}
+\addto{\captionsngerman}{\renewcommand{\refname}{Quellen}}
+
+%%%% Mit-TeXen Kommandoset
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+
+\newcommand{\replace}[2]{
+    \sout{\textcolor{blue}{#1}}~\textcolor{blue}{#2}}
+\newcommand{\delete}[1]{
+    \sout{\textcolor{red}{#1}}}
+\newcommand{\add}[1]{
+    \textcolor{blue}{#1}}
+
+
+\begin{document}
+    \hspace{0.87\textwidth}
+    \begin{minipage}{120pt}
+        \vspace{-1.8cm}
+        \includegraphics[width=80pt]{../logo.pdf}
+        \centering
+        \small Zusammenkunft aller Physik-Fachschaften
+    \end{minipage}
+    \begin{center}
+        \huge{Resolution zur Wissenschaftskommunikation}\vspace{.25\baselineskip}\\
+        \normalsize
+    \end{center}
+    \vspace{1cm}
+
+Die Zusammenkunft aller Physikfachschaften (ZaPF) fordert, dass Wissenschaftskommunikation im Curriculum implementiert sowie an Hochschulen ge\-för\-dert wird. Weiterhin fordert die ZaPF, dass Forschende – speziell Hochschulangehörige – externe Wissenschaftskommunikation betreiben, um ihrer besonderen gesellschaftlichen Verantwortung nachzukommen.\\
+Nachfolgend gehen wir tiefer auf unsere Forderungen ein und ergänzen Umsetzungshinweise aus unseren Positionen\footnote{\url{https://zapfev.de/resolutionen/wise18/PosPap\_WissKomm\_I/WissKomm\_I.pdf}}$^,$\footnote{\url{https://zapfev.de/resolutionen/wise18/PosPap\_WissKomm\_II/WissKomm\_II.pdf}}, die wir aus eigenen Erfahrungen, Gesprächen mit Forschenden und im Rahmen von Schulungen entwickelt haben.
+
+\section{Rolle der Wissenschaftskommunikation}
+
+Neben der Verbreitung von Wissen soll Wissenschaftskommunikation sowohl der Rechtfertigung, als auch der gesellschaftlichen Kontrolle der Wissenschaft dienen. Sie soll Forschung transparenter machen, Neugierde wecken, zum Nachdenken anregen, Akzeptanz für Wissenschaft und Forschung vergrößern und insbesondere mögliche Ängste in der Gesellschaft vor wissenschaftlichen Entwicklungen nehmen. Außerdem sollen Menschen befähigt werden, wissenschaftlich fundierte Diskurse zu führen. Wissenschaft muss Teil der gesellschaftlichen und politischen Diskussion sein, deshalb sollen sich Forschende aktiv in diese einbringen und Unwissenschaftlichkeit entgegentreten. Hierbei sollten zielgruppenorientiert verschiedene Formate genutzt werden. Dazu zählen bspw. Podcasts, Blogs, Videos, Lange Nächte der Wissenschaften, Science Slams, wissenschaftliche Artikel in Zeitschriften, Schüleruniversitäten oder -labore.\\
+Dialog und Integration können und sollen auch über Wissenschaft stattfinden. Deswegen ist das Erschließen neuer Zielgruppen sowie die Nachwuchsförderung wichtig und es soll aktiv auf für Forschende tendenziell schwer zu erreichende Gruppen wie bildungsferne Schichten zugegangen werden. So sollen außerdem Menschen mit Migrationshintergrund erreicht werden.
+
+\section{Förderung von Wissenschaftskommunikation in der Akademischen Ausbildung}
+Die ZaPF fordert die Integration von Wissenschaftskommunikation in die akademische Ausbildung und sieht dafür unter anderem folgende Stellen im Bachelor- sowie Masterstudium, bei denen Wissenschaftskommunikation gelehrt und geübt werden kann:
+
+\begin{itemize}
+	\item Die ZaPF empfiehlt, dass jede Hochschule den Studierenden die Möglichkeit gibt, sich möglichst im Rahmen einer Pflichtveranstaltung mit Wissenschaftskommunikation auseinandersetzen. Hierbei erachten wir eine fakultätsübergreifende Veranstaltung mit theoretischen und praktischen Inhalten aufgrund des interdisziplinären Austausches als vorteilhaft.
+	
+	\item Für die praktische Umsetzung empfiehlt die ZaPF weiterhin die Einführung von Möglichkeiten zur Vorstellung der Bachelor- und Masterarbeiten für ein fachfremdes Publikum über die Verteidigung hinaus.
+\end{itemize}
+Darüber hinaus spricht sich die ZaPF dafür aus, dass eine stärkere Verzahnung von Studierenden mit Presseabteilungen stattfindet.
+Dies kann zum Beispiel durch Unterstützung bei der praktischer Auseinandersetzung mit Wissenschaftskommunikation geschehen und indem die Presseabteilung Ansprechpartnerin für Erstellung und Bewerbung von Bachelor- und Masterarbeiten ist. Hierfür müssen weitere Kapazitäten an Personal und Material geschaffen werden.
+
+\section{Schlussbemerkung}
+Eine besondere Rolle\footnotemark[1] in der Ausübung\footnotemark[2] sowie Stärkung der Wissenschaftskommunikation sprechen wir Hochschulen und Forschungsgemeinschaften zu.
+Diese sollen sich über Möglichkeiten der Wissenschaftskommunikation informieren, sowie Mittel und Personal für Wissenschaftskommunikation bereitstellen. 
+Wissenschaftskommunikator*innen und Organisierende von entsprechenden Formaten sollen sichtbar gewürdigt und unterstützt werden.
+
+
+\vfill
+    \begin{flushright}
+        Verabschiedet am 2.11.2019 in Freiburg
+    \end{flushright}
+\end{document}
+
